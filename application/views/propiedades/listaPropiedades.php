@@ -22,7 +22,8 @@
 				 	</tr>
 				 <?php endforeach ?>
 			</tr>
-		</tbody>
+		</tbody> 
+		<thead></thead>
 
 	</table>
 </div>
