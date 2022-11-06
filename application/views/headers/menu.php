@@ -5,6 +5,8 @@
                 aria-controls="offcanvasExample">
                 <span class="navbar-toggler-icon"></span>
             </button>
+            <img src="https://o.remove.bg/downloads/c023399f-73f7-485f-876f-f69a51018faa/image-removebg-preview.png"
+                alt="LogoFS" width="280" height="60" class="d-inline-block align-text-top">
             <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample"
                 aria-labelledby="offcanvasExampleLabel">
                 <div class="offcanvas-header">
@@ -12,23 +14,21 @@
                     <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                 </div>
                 <div class="dropdown mt-3">
-                    <button class="btn btn-success" type="button">
+                    <a href="index.php/PropiedadesC/perfil" type="button" class="btn btn-success">
                         Perfil
-                    </button>
+                    </a>
                 </div>
                 <div class="dropdown mt-3">
-                    <button class="btn btn-success" type="button">
+                    <a href="index.php/PropiedadesC/perfil" type="button" class="btn btn-success">
                         Mis propiedades
-                    </button>
+                    </a>
                 </div>
                 <div class="dropdown mt-3">
-                    <button class="btn btn-success" type="button">
+                    <a href="index.php/PropiedadesC/perfil" type="button" class="btn btn-success">
                         Reservas
-                    </button>
+                    </a>
                 </div>
             </div>
-            <img src="https://o.remove.bg/downloads/ba702c25-c656-407b-a718-32199db39fe1/image-removebg-preview.png"
-                alt="LogoFS" width="280" height="60" class="d-inline-block align-text-top">
         </a>
         <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">

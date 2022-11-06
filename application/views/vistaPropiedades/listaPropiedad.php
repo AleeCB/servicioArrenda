@@ -1,7 +1,5 @@
 <div class="container">
     <h1 class="text-center">Mis propiedades</h1>
-    <a class="btn btn-warning btn-sm" href="<?=base_url('index.php/PropiedadesC/insertarPropiedad/')?>">AGREGAR
-        PROPIEDAD</a>
     <table class="table table-striped table-bordered">
         <thead class="table-primary">
             <th class="text-center">Id</th>
@@ -26,7 +24,7 @@
                 <td><?=$key->amueblado?></td>
                 <td><?=$key->tipoPropiedad?></td>
                 <td><?=$key->fotoPrincipal?></td>
-                <td><a class="btn btn-warning btn-sm"
+                <td><a class="btn btn-info btn-sm"
                         href="<?=base_url('index.php/PropiedadesC/editarPropiedad/').$key->idPropiedad?>">EDITAR</a>
                     <a class="btn btn-danger btn-sm"
                         href="<?=base_url('index.php/PropiedadesC/eliminarPropiedad/').$key->idPropiedad?>">ELIMINAR</a>
@@ -36,3 +34,6 @@
         </tbody>
         </thead>
     </table>
+    <div class="d-flex align-items-center justify-content-center"><a class="btn btn-success btn-sm"
+            href="<?=base_url('index.php/PropiedadesC/insertarPropiedad/')?>">AGREGAR
+            PROPIEDAD</a></div>

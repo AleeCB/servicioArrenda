@@ -7,10 +7,24 @@ class PropiedadesC extends CI_Controller
         $this->load->model('PropiedadesM');
         $data ['propiedades'] = $this->PropiedadesM->getPropiedades();
 
-        $this->load->view('headers/head.php');
-        $this->load->view('headers/menu.php');
-        $this->load->view('vistaPropiedades/listaPropiedad.php', $data);
-        $this->load->view('headers/footer.php');
+          $this->load->helper(array('form', 'url'));
+        
+                $this->load->library('form_validation');
+
+                $this->form_validation->set_rules('servicio', 'servicio', 'required');
+                if ($this->form_validation->run() == FALSE)
+                {
+                    $this->load->view('headers/head.php');
+                    $this->load->view('headers/menu.php');
+                    $this->load->view('vistaPropiedades/listaPropiedad.php', $data);
+                    $this->load->view('headers/footer.php');
+                }
+                else
+                {
+                        $this->load->view('formsuccess');
+                }
+        }
+}
     }
 
     public function editarPropiedad($idPropiedad){
@@ -56,4 +70,15 @@ class PropiedadesC extends CI_Controller
         $this->load->view('headers/menu.php');
         $this->load->view('headers/footer.php');
     }
+
+    public function navegacionCasa(){
+        $this->load->model('PropiedadesM');
+        $data ['propiedades'] = $this->PropiedadesM->getPropiedades();
+
+        $this->load->view('headers/head.php');
+        $this->load->view('headers/menu.php');
+        $this->load->view('vistaPropiedades/navegacionCasa.php', $data);
+        $this->load->view('headers/footer.php');
+    }
+
 }?>
