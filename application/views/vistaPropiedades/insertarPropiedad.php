@@ -1,6 +1,6 @@
 <div class="container">
     <h1>NUEVA PROPIEDAD</h1>
-    <form action="<?=base_url('index.php/PropiedadesC/InsertarPropiedad')?>" method="POST">
+    <form action="<?=base_url('index.php/PropiedadesC/insertarPropiedad')?>" method="POST">
         <div class="container">
             <div class="row">
                 <div class="col-1">
@@ -36,7 +36,7 @@
         <label>Personas permitidas</label>
         <input type="number" class="form-control" name="numHabitantes"><br>
         <label>Precio</label>
-        <input type="number" class="form-control" min="800" max="5000" name="precio">
+        <input type="number" class="form-control" min="800" max="5000" name="precio"><br>
         <input class="form-check-input" type="checkbox" class="form-control" name="estatus">
         <label class="form-check-label">Disponible</label><br>
         <input class="form-check-input" type="checkbox" class="form-control" name="amueblado">

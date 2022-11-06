@@ -33,13 +33,9 @@
                         href="<?=base_url('index.php/PropiedadesC/eliminarPropiedad/').$key->idPropiedad?>">ELIMINAR</a>
                 </td>
 
-				 	<tr>
-				 		<!-- imprimir la variable key, haciendo refrencia al atributo de la tabla  -->
-				 		<td> <?=$key->idPropiedad ?></td>
-				 	</tr>
-				 <?php endforeach ?>
-			</tr>
-		</tbody>
-
-	</table>
+            </tr>
+            <?php endforeach ?>
+        </tbody>
+        </thead>
+    </table>
 </div>
