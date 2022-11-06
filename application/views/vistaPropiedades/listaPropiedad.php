@@ -17,7 +17,7 @@
             <th class="text-center">ACCION</th>
         <tbody class="table-primary">
             <?php foreach($propiedades as $key): ?>
-            <tr>
+            <tr>  
                 <td><?=$key->idPropiedad?></td>
                 <td><?=$key->nombre?></td>
                 <td><?=$key->ubicacion?></td>
