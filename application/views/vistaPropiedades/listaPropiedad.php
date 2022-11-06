@@ -1,5 +1,9 @@
 <div class="container">
     <h1 class="text-center">Mis propiedades</h1>
+    <!-- Button trigger modal -->
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+        AGREGAR PROPIEDAD
+    </button>
     <table class="table table-striped table-bordered">
         <thead class="table-primary">
             <th class="text-center">Id</th>
@@ -34,11 +38,6 @@
         </tbody>
         </thead>
     </table>
-    <!-- Button trigger modal -->
-    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-        AGREGAR PROPIEDAD
-    </button>
-
     <!-- Modal -->
     <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
         aria-labelledby="staticBackdropLabel" aria-hidden="true">
@@ -50,7 +49,7 @@
                 </div>
                 <div class="modal-body">
                     <div class="container">
-                        <form action="<?=base_url('index.php/PropiedadesC/InsertarPropiedad')?>" method="POST">
+                        <form action="<?=base_url('index.php/PropiedadesC/insertarPropiedad')?>" method="POST">
                             <div class="container">
                                 <div class="row">
                                     <div class="col-1">
@@ -80,7 +79,7 @@
                                 </div>
                             </div>
                             <label>Nombre</label>
-                            <input type="text" class="form-control" name="nombre" class="w-10 p-3"><br>
+                            <input type="text" class="form-control" name="Nombre" class="w-10 p-3"><br>
                             <label>Ubicación</label>
                             <input type="text" class="form-control" name="ubicacion"><br>
                             <label>Personas permitidas</label>
@@ -102,9 +101,8 @@
                     </div>
                 </div>
                 <div class="modal-footer">
-                    <div class="d-grid gap-2 col-6 mx-auto">
-                        <button class="btn btn-primary" type="submit">ENVIAR</button>
-                    </div>
+                    <button class="btn btn-success" type="button">CANCELAR</button>
+                    <button class="btn btn-success" type="submit">ENVIAR</button>
                 </div>
             </div>
         </div>
