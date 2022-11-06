@@ -3,8 +3,8 @@
     <a class="btn btn-success" href="<?=base_url('index.php/PropiedadesC/insertarPropiedad/')?>">AGREGAR
         PROPIEDAD</a>
 
-    <table class="table table-striped table-bordered">
-        <thead class="table-success">
+    <table class="table">
+        <thead class="table-default">
             <th class="text-center">Id</th>
             <th class="text-center">Nombre de la propiedad</th>
             <th class="text-center">Ubicación</th>
@@ -15,7 +15,7 @@
             <th class="text-center">Tipo de propiedad</th>
             <th class="text-center">Foto</th>
             <th class="text-center">ACCION</th>
-        <tbody class="table-primary">
+        <tbody class="table">
             <?php foreach($propiedades as $key): ?>
             <tr>
                 <td><?=$key->idPropiedad?></td>
