@@ -32,7 +32,7 @@
                     <a class="btn btn-danger btn-sm"
                         href="<?=base_url('index.php/PropiedadesC/eliminarPropiedad/').$key->idPropiedad?>">ELIMINAR</a>
                 </td>
-            <!-- xd -->
+            <!-- xdd->
             </tr>
             <?php endforeach ?>
         </tbody>
