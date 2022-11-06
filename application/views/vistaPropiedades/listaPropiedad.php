@@ -1,10 +1,7 @@
 <div class="container">
-
-    <a class="btn btn-success" href="<?=base_url('index.php/PropiedadesC/insertarPropiedad/')?>">AGREGAR
-        PROPIEDAD</a>
-
-    <table class="table">
-        <thead class="table-default">
+    <h1 class="text-center">Mis propiedades</h1>
+    <table class="table table-striped table-bordered">
+        <thead class="table-primary">
             <th class="text-center">Id</th>
             <th class="text-center">Nombre de la propiedad</th>
             <th class="text-center">Ubicación</th>
@@ -15,9 +12,9 @@
             <th class="text-center">Tipo de propiedad</th>
             <th class="text-center">Foto</th>
             <th class="text-center">ACCION</th>
-        <tbody class="table">
+        <tbody class="table-default">
             <?php foreach($propiedades as $key): ?>
-            <tr>  
+            <tr>
                 <td><?=$key->idPropiedad?></td>
                 <td><?=$key->nombre?></td>
                 <td><?=$key->ubicacion?></td>
@@ -27,15 +24,17 @@
                 <td><?=$key->amueblado?></td>
                 <td><?=$key->tipoPropiedad?></td>
                 <td><?=$key->fotoPrincipal?></td>
-                <td><a class="btn btn-success btn-sm"
+                <td><a class="btn btn-info btn-sm"
                         href="<?=base_url('index.php/PropiedadesC/editarPropiedad/').$key->idPropiedad?>">EDITAR</a>
                     <a class="btn btn-danger btn-sm"
                         href="<?=base_url('index.php/PropiedadesC/eliminarPropiedad/').$key->idPropiedad?>">ELIMINAR</a>
                 </td>
-            <!-- xdd->
+            <!-- d -->
             </tr>
             <?php endforeach ?>
         </tbody>
         </thead>
     </table>
-</div>
+    <div class="d-flex align-items-center justify-content-center"><a class="btn btn-success btn-sm"
+            href="<?=base_url('index.php/PropiedadesC/insertarPropiedad/')?>">AGREGAR
+            PROPIEDAD</a></div>
