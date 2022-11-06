@@ -1,5 +1,6 @@
 <div class="container">
     <h1>NUEVA PROPIEDAD</h1>
+    <?php echo validation_errors(); ?>
     <form action="<?=base_url('index.php/PropiedadesC/insertarPropiedad')?>" method="POST">
         <div class="container">
             <div class="row">
@@ -10,19 +11,19 @@
                     <label>Foto principal</label>
                 </div>
                 <div class="col-2">
-                    <input type="file" class="form-control" class="w-10 p-3" name="fotoPrincipal">
+                    <input type="file" class="form-control" class="w-10 p-3" name="foto1">
                     <label>Foto 1</label>
                 </div>
                 <div class="col-2">
-                    <input type="file" class="form-control" class="w-10 p-3" name="fotoPrincipal">
+                    <input type="file" class="form-control" class="w-10 p-3" name="foto2">
                     <label>Foto 2</label>
                 </div>
                 <div class="col-2">
-                    <input type="file" class="form-control" class="w-10 p-3" name="fotoPrincipal">
+                    <input type="file" class="form-control" class="w-10 p-3" name="foto3">
                     <label>Foto 3</label>
                 </div>
                 <div class="col-2">
-                    <input type="file" class="form-control" class="w-10 p-3" name="fotoPrincipal">
+                    <input type="file" class="form-control" class="w-10 p-3" name="foto4">
                     <label>Foto 4</label>
                 </div>
                 <div class="col-1">
@@ -30,7 +31,7 @@
             </div>
         </div>
         <label>Nombre</label>
-        <input type="text" class="form-control" name="Nombre" class="w-10 p-3"><br>
+        <input type="text" class="form-control" name="nombre" class="w-10 p-3"><br>
         <label>Ubicación</label>
         <input type="text" class="form-control" name="ubicacion"><br>
         <label>Personas permitidas</label>
@@ -42,13 +43,14 @@
         <input class="form-check-input" type="checkbox" class="form-control" name="amueblado">
         <label class="form-check-label">Amueblado</label></br>
         <label for="">Tipo de propiedad: </label>
-        <select class="input is-large" name="tipo" id="">
-            <option value="Computadora portátil">Casa</option>
-            <option value="PC de escritorio">Cuarto</option>
-            <option value="PC gamming">Pensión</option>
-            <option value="Chromebook">Departamento</option>
+        <select class="input is-large" name="tipoPropiedad" id="">
+            <option value="Casa">Casa</option>
+            <option value="Cuarto">Cuarto</option>
+            <option value="Pensión">Pensión</option>
+            <option value="Departamento">Departamento</option>
         </select><br>
-        <button class="btn btn-success" type="button">CANCELAR</button>
-        <button class="btn btn-success" type="submit">ENVIAR</button>
+        <div class="d-grid gap-2 col-6 mx-auto">
+            <button class="btn btn-primary" type="submit">ENVIAR</button>
+        </div>
     </form>
 </div>

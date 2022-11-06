@@ -31,19 +31,24 @@ class PropiedadesC extends CI_Controller
     }
 
     public function insertarPropiedad(){
+        $this->load->model('PropiedadesM');
         $this->load->helper(array('form', 'url'));
-        $this->load->library('form_validation');
-        if ($this->form_validation->run() == FALSE)
-        {
-            $this->load->view('headers/head.php');
-            $this->load->view('headers/menu.php');
-            $this->load->view('headers/footer.php');
-            $this->load->view('vistaPropiedades/insertarPropiedad');
-        }
-        else
-        {
-            //$this->load->view('formsuccess');
-        }
+        
+                $this->load->library('form_validation');
+                $this->form_validation->set_rules('nombre', 'nombre', 'required');
+                $this->form_validation->set_rules('ubicacion', 'ubicacion', 'required');
+                if ($this->form_validation->run() == FALSE)
+                {
+                        $this->load->view('headers/head.php');
+                        $this->load->view('headers/menu.php');
+                        $this->load->view('vistaPropiedades/insertarPropiedad');
+                        $this->load->view('headers/footer.php');
+                }
+                else
+                {
+                        $this->PropiedadesM->insertarPropiedad();
+                        redirect(base_url('index.php/PropiedadesC/show'), 'refresh');
+                }
     }
 
     public function getPropiedad($IdPropiedad){
