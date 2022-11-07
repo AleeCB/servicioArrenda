@@ -1,6 +1,8 @@
-<div class="container">
+<body>
+    
+<div class="container " >
 
-   
+   <br> <br>
     <table class="table table-striped table-bordered">
         <thead class="table-success">
             <th class="text-center">Id</th>
@@ -32,3 +34,4 @@
         </thead>
     </table>
 </div>
+</body>

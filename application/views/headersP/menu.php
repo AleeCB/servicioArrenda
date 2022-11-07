@@ -1,6 +1,9 @@
-<nav class="navbar navbar-expand-lg bg-prymary" style="background-color: #e3f2fd;">
+<!-- <nav class="navbar navbar-expand-lg bg-prymary" style="background-color: #e3f2fd; "> -->
+<nav class="navbar navbar-expand-lg bg-light">
     <div class="container-fluid">
-        <a class="navbar-brand" href="#">FOREIGNER´S SITE</a>
+    <a class="navbar-brand" href="#">
+      <img src="https://dewey.tailorbrands.com/production/brand_version_mockup_image/281/7826038281_05bdbfb5-ba7b-4213-9e02-3488afd0c93c.png?cb=1667763509"  width="220" height="40">
+    </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
