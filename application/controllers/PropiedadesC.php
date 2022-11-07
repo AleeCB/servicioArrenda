@@ -24,8 +24,8 @@ class PropiedadesC extends CI_Controller
                         $this->load->view('formsuccess');
                 }
         }
-}
-    }
+
+    
 
     public function editarPropiedad($idPropiedad){
         $this->load->model('PropiedadesM');
