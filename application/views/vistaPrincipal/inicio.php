@@ -27,7 +27,7 @@
                 <td><?=$key->amueblado?></td>
                 <td><?=$key->tipoPropiedad?></td>
                 <td><?=$key->fotoPrincipal?></td>
-                
+                <!-- holisbhbhjbcj -->
             </tr>
             <?php endforeach ?>
         </tbody>
