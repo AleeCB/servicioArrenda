@@ -1,6 +1,8 @@
-<div class="container">
+<body>
+    
+<div class="container " >
 
-   
+   <br> <br>
     <table class="table table-striped table-bordered">
         <thead class="table-success">
             <th class="text-center">Id</th>
@@ -25,10 +27,11 @@
                 <td><?=$key->amueblado?></td>
                 <td><?=$key->tipoPropiedad?></td>
                 <td><?=$key->fotoPrincipal?></td>
-                
+                <!-- holisbhbhjbcj -->
             </tr>
             <?php endforeach ?>
         </tbody>
         </thead>
     </table>
 </div>
+</body>
