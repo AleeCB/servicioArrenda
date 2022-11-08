@@ -35,10 +35,12 @@
         </thead>
     </table>
     <!-- Button trigger modal -->
-    <button type="button" class="btn btn-primary" class="d-grid gap-2 col-6 mx-auto" data-bs-toggle="modal"
-        data-bs-target="#staticBackdrop">
-        AGREGAR PROPIEDAD
-    </button>
+    <div class="d-grid gap-2 col-6 mx-auto">
+        <button type="button" class="btn btn-primary" class="d-grid gap-2 d-md-block col-6 mx-auto"
+            data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+            AGREGAR PROPIEDAD
+        </button>
+    </div>
 
     <!-- Modal -->
     <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
@@ -99,7 +101,6 @@
                                 <option value="PC gamming">Pensión</option>
                                 <option value="Chromebook">Departamento</option>
                             </select><br>
-
                     </div>
                 </div>
                 <div class="modal-footer">
