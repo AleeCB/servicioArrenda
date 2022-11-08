@@ -1,4 +1,4 @@
-<nav class="navbar" style="background-color: #05041A;">
+<nav class="navbar" style="background-color: #FFFFFF;">
     <div class="container-fluid">
         <a class="navbar-brand" href="#">
             <button class="btn btn-info" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample"
@@ -11,7 +11,7 @@
                 >
                 <div class="offcanvas-header">
                     <h5 class="offcanvas-title" id="offcanvasExampleLabel">Menú</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    <button type="button" class="btn-close"  aria-label="Close"></button>
                 </div>
                 <div class="dropdown mt-3">
                     <button class="btn btn-success" type="button">
