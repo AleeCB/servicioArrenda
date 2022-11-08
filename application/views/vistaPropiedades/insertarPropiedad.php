@@ -1,4 +1,4 @@
-<div class="container">
+<div class="container"> 
     <h1>NUEVA PROPIEDAD</h1>
     <?php echo validation_errors(); ?>
     <form action="<?=base_url('index.php/PropiedadesC/insertarPropiedad')?>" method="POST">
@@ -52,6 +52,6 @@
         <div class="d-grid gap-2 col-6 mx-auto">
             <button class="btn btn-primary" type="submit">ENVIAR</button>
         </div>
-        
+    
     </form>
 </div>
