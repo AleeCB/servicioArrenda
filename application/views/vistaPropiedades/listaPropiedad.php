@@ -35,10 +35,12 @@
         </thead>
     </table>
     <!-- Button trigger modal -->
-    <button type="button" class="btn btn-primary" class="d-grid gap-2 col-6 mx-auto" data-bs-toggle="modal"
-        data-bs-target="#staticBackdrop">
-        AGREGAR PROPIEDAD
-    </button>
+    <div class="d-grid gap-2 col-6 mx-auto">
+        <button type="button" class="btn btn-primary" class="d-grid gap-2 d-md-block col-6 mx-auto"
+            data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+            AGREGAR PROPIEDAD
+        </button>
+    </div>
 
     <!-- Modal -->
     <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
@@ -94,12 +96,11 @@
                             <label class="form-check-label">Amueblado</label></br>
                             <label for="">Tipo de propiedad: </label>
                             <select class="input is-large" name="tipo" id="">
-                                <option value="Computadora portátil">Casa</option>
-                                <option value="PC de escritorio">Cuarto</option>
-                                <option value="PC gamming">Pensión</option>
-                                <option value="Chromebook">Departamento</option>
+                                <option value="Casa">Casa</option>
+                                <option value="Cuato">Cuarto</option>
+                                <option value="Pension">Pensión</option>
+                                <option value="Departamento">Departamento</option>
                             </select><br>
-
                     </div>
                 </div>
                 <div class="modal-footer">
