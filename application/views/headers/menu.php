@@ -1,10 +1,8 @@
-<<<<<<< HEAD
 <nav class="navbar" style="background-color: #FFFFFF;">
-=======
-<nav class="navbar" style="background-color: #e3f2fd;">
->>>>>>> f47010641a6a04915a19d22a79f11bd86022b67f
     <div class="container-fluid">
         <a class="navbar-brand" href="#">
+        <img src="https://dewey.tailorbrands.com/production/brand_version_mockup_image/281/7826038281_05bdbfb5-ba7b-4213-9e02-3488afd0c93c.png?cb=1667763509"  width="220" height="40">
+    </a>
             <button class="btn btn-info" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample"
                 aria-controls="offcanvasExample">
                 <span class="navbar-toggler-icon"></span>
