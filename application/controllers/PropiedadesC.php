@@ -78,5 +78,6 @@ class PropiedadesC extends CI_Controller
         $this->load->view('vistaPropiedades/navegacionCasa.php', $data);
         $this->load->view('headers/footer.php');
     }
-
+//prueba
 }?>
+
