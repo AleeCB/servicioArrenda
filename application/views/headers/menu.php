@@ -1,8 +1,4 @@
-<<<<<<< HEAD
 <nav class="navbar" style="background-color: #FFFFFF;">
-=======
-<nav class="navbar" style="background-color: #e3f2fd;">
->>>>>>> f47010641a6a04915a19d22a79f11bd86022b67f
     <div class="container-fluid">
         <a class="navbar-brand" href="#">
             <button class="btn btn-info" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample"
@@ -44,4 +40,6 @@
             </ul>
         </li>
     </div>
+    //VAMO A VER QUE SHOW
 </nav>
+
