@@ -50,12 +50,10 @@ class PropiedadesC extends CI_Controller
         
                 $this->load->library('form_validation');
                 $this->form_validation->set_rules('nombre', 'nombre', 'required');
-                $this->form_validation->set_rules('ubicacion', 'ubicacion', 'required');
                 if ($this->form_validation->run() == FALSE)
                 {
                         $this->load->view('headers/head.php');
                         $this->load->view('headers/menu.php');
-                        $this->load->view('vistaPropiedades/insertarPropiedad');
                         $this->load->view('headers/footer.php');
                 }
                 else
