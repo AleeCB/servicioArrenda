@@ -100,9 +100,9 @@
                                 <option value="Cuato">Cuarto</option>
                                 <option value="Pension">Pensión</option>
                                 <option value="Departamento">Departamento</option>
-                            </select><br>
+                            </select><br> 
                     </div>
-                </div>
+                </div> 
                 <div class="modal-footer">
                     <div class="d-grid gap-2 col-6 mx-auto">
                         <button class="btn btn-primary" type="submit">ENVIAR</button>
