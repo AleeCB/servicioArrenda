@@ -54,7 +54,6 @@ class PropiedadesC extends CI_Controller
                 {
                         $this->load->view('headers/head.php');
                         $this->load->view('headers/menu.php');
-                        $this->load->view('vistaPropiedades/insertarPropiedad');
                         $this->load->view('headers/footer.php');
                 }
                 else
