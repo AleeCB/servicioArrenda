@@ -35,7 +35,8 @@
         </thead>
     </table>
     <!-- Button trigger modal -->
-    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+    <button type="button" class="btn btn-primary" class="d-grid gap-2 col-6 mx-auto" data-bs-toggle="modal"
+        data-bs-target="#staticBackdrop">
         AGREGAR PROPIEDAD
     </button>
 
