@@ -11,8 +11,9 @@
                 aria-labelledby="offcanvasExampleLabel">
                 <div class="offcanvas-header">
                     <h5 class="offcanvas-title" id="offcanvasExampleLabel">Menú</h5>
-                    <button type="button" class="btn-close"  aria-label="Close"></button>
+                    <button type="button" class="btn-close" aria-label="Close"></button>
                 </div>
+                <div></div>
                 <div class="dropdown mt-3">
                     <button class="btn btn-success" type="button">
                         Perfil
