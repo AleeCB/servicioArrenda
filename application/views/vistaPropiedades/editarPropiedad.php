@@ -6,4 +6,5 @@
     <p>Estatus: <?=$propiedades[0]->estatus?></p>
     <p>Amueblado: <?=$propiedades[0]->amueblado?></p>
     <p>Tipo de propiedad: <?=$propiedades[0]->tipoPropiedad?></p>
+    <p>Foto principal: <?=$propiedades[0]->fotoPrincipal?></p>
 </div>
