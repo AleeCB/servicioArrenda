@@ -19,7 +19,7 @@
             <?php foreach($propiedades as $key): ?>
             <tr>
                 <td><?=$key->idPropiedad?></td>
-                <td><?=$key->nombre?></td>
+                <td><?=$key->nombre?></td> 
                 <td><?=$key->ubicacion?></td>
                 <td><?=$key->numHabitantes?></td>
                 <td><?=$key->precio?></td>
@@ -27,7 +27,7 @@
                 <td><?=$key->amueblado?></td>
                 <td><?=$key->tipoPropiedad?></td>
                 <td><?=$key->fotoPrincipal?></td>
-                <!-- holisbhbhjbcj -->
+             <!--hsdjdbsjbjjhsv  -->
             </tr>
             <?php endforeach ?>
         </tbody>
