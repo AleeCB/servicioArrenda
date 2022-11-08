@@ -96,10 +96,10 @@
                             <label class="form-check-label">Amueblado</label></br>
                             <label for="">Tipo de propiedad: </label>
                             <select class="input is-large" name="tipo" id="">
-                                <option value="Computadora portátil">Casa</option>
-                                <option value="PC de escritorio">Cuarto</option>
-                                <option value="PC gamming">Pensión</option>
-                                <option value="Chromebook">Departamento</option>
+                                <option value="Casa">Casa</option>
+                                <option value="Cuato">Cuarto</option>
+                                <option value="Pension">Pensión</option>
+                                <option value="Departamento">Departamento</option>
                             </select><br>
                     </div>
                 </div>
