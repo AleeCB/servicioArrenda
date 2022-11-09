@@ -1,7 +1,7 @@
 <div class="container">
-    <h1 class="text-center">Mis propiedades</h1>
-    <table class="table table-striped table-bordered">
-        <thead class="table-primary">
+    <table class="table table-bordered">
+        <h1 class="text-center">Mis propiedades</h1>
+        <thead class="table-success">
             <th class="text-center">Id</th>
             <th class="text-center">Nombre de la propiedad</th>
             <th class="text-center">Ubicación</th>
@@ -12,7 +12,7 @@
             <th class="text-center">Tipo de propiedad</th>
             <th class="text-center">Foto</th>
             <th class="text-center">ACCION</th>
-        <tbody class="table-default">
+        <tbody class="table-light">
             <?php foreach($propiedades as $key): ?>
             <tr>
                 <td><?=$key->idPropiedad?></td>
@@ -24,7 +24,7 @@
                 <td><?=$key->amueblado?></td>
                 <td><?=$key->tipoPropiedad?></td>
                 <td><?=$key->fotoPrincipal?></td>
-                <td><a class="btn btn-warning btn-sm"
+                <td><a class="btn btn-info btn-sm"
                         href="<?=base_url('index.php/PropiedadesC/editarPropiedad/').$key->idPropiedad?>">EDITAR</a>
                     <a class="btn btn-danger btn-sm"
                         href="<?=base_url('index.php/PropiedadesC/eliminarPropiedad/').$key->idPropiedad?>">ELIMINAR</a>
@@ -36,10 +36,10 @@
     </table>
     <!-- Button trigger modal -->
     <div class="d-grid gap-2 col-6 mx-auto">
-        <button type="button" class="btn btn-primary" class="d-grid gap-2 d-md-block col-6 mx-auto"
-            data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-            AGREGAR PROPIEDAD
-        </button>
+        <p class="text-center"><button type="button" class="btn btn-success"
+                class="d-grid gap-1 d-md-block col-1 mx-auto" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                AGREGAR PROPIEDAD
+            </button> </p>
     </div>
 
     <!-- Modal -->
