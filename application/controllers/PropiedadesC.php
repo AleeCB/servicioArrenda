@@ -1,5 +1,5 @@
 <?php
-//VAMO A VER SI YA APARECE EL LOGO JIJI
+
 class PropiedadesC extends CI_Controller
 {
 //VIVA CRISTO REEEEEEEEEEEEY SI AHUEVO JSJSJ
