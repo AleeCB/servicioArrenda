@@ -24,7 +24,7 @@
                     </a>
                 </div>
                 <div class="dropdown mt-1">
-                    <a href="index.php/PropiedadesC/perfil" type="button" class="btn btn-lg" style="color: white;">
+                    <a href="index.php/ReservasC/show" type="button" class="btn btn-lg" style="color: white;">
                         Reservas
                     </a>
                 </div>
@@ -44,4 +44,3 @@
 
 
 </nav>
-
