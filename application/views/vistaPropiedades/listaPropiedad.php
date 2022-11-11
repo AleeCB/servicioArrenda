@@ -36,9 +36,12 @@
     </table>
     <!-- Button trigger modal -->
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
     <div class="d-grid gap-2 col-6 mx-auto">
 =======
 <<<<<<< HEAD
+>>>>>>> e41d65d25bddf01b19d2c334a403fc2073dfa839
     <div class="d-grid gap-2 col-6 mx-auto" >
 =======
     <<<<<<< HEAD <div class="d-grid gap-2 col-6 mx-auto">
@@ -49,6 +52,10 @@
             AGREGAR PROPIEDAD
         </button>
 <<<<<<< HEAD
+    </div>
+=======
+<<<<<<< HEAD
+>>>>>>> e41d65d25bddf01b19d2c334a403fc2073dfa839
 
 =======
 <<<<<<< HEAD

@@ -105,20 +105,20 @@
                                     <div class="container">
                                         <div class="row">
                                             <div class="col-3 text-center">
-                                                <label>Nombre:</label>
+                                                <label for="example" class="form-label">Email:</label>
                                             </div>
                                             <div class="col-9">
-                                                <input type="text" class="form-control" name="nombre"
-                                                    class="w-10 p-3"><br>
+                                                <input type="email" name="correo" class="form-control" 
+                                                  id="" ><br>
                                             </div>
                                         </div>
                                         <div class="row">
                                             <div class="col-3 text-center">
-                                                <label>Contraseña: </label>
+                                            <label for="example" class="form-label">Contraseña:</label>
                                             </div>
                                             <div class="col-9">
-                                                <input type="text" class="form-control" name="nombre"
-                                                    class="w-10 p-3"><br>
+                                            <input type="password" name="contrasenia" class="form-control" 
+                                                  id="" ><br>
                                             </div>
                                         </div>
 
