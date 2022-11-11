@@ -2,7 +2,6 @@
 
 class PrincipalC extends CI_Controller
 {
-
     public function major(){
         $this->load->model('PrincipalM');
         $data ['propiedades'] = $this->PrincipalM->getPropiedades();
