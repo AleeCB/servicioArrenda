@@ -35,11 +35,19 @@
         </thead>
     </table>
     <!-- Button trigger modal -->
+<<<<<<< HEAD
+    <div class="d-grid gap-2 col-6 mx-auto" >
+        <button type="button" class="btn btn-primary" class="d-grid gap-2 d-md-block col-6 mx-auto"
+            data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+            AGREGAR PROPIEDAD
+        </button>
+=======
     <div class="d-grid gap-2 col-6 mx-auto">
         <p class="text-center"><button type="button" class="btn btn-success"
                 class="d-grid gap-1 d-md-block col-1 mx-auto" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
                 AGREGAR PROPIEDAD
             </button> </p>
+>>>>>>> a745dea985c703b123aebedbfe1111494ced14ba
     </div>
 
     <!-- Modal -->
