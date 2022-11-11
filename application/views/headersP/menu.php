@@ -99,7 +99,7 @@
                         </div>
                         <div class="modal-body" style="background-color: #31AFB4;">
                             <div class="container">
-                                <form action="<?=base_url('index.php/PropiedadesC/')?>" method="POST">
+                                <form action="<?=base_url('index.php/PropiedadesC/InsertarPropiedad')?>" method="POST">
                                     <br> <br>
                                     <h4 class="text-center">¡Bienvenodo a Foreigner's Site!</h4>
                                     <br>
