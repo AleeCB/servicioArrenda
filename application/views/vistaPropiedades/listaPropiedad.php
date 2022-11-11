@@ -39,7 +39,7 @@
         <p class="text-center"><button type="button" class="btn btn-success"
                 class="d-grid gap-1 d-md-block col-1 mx-auto" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
                 AGREGAR PROPIEDAD
-            </button> </p>
+        </p>
     </div>
 
     <!-- Modal -->
