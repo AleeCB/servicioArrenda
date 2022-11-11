@@ -36,28 +36,32 @@
     </table>
     <!-- Button trigger modal -->
 <<<<<<< HEAD
+    <div class="d-grid gap-2 col-6 mx-auto">
+=======
+<<<<<<< HEAD
     <div class="d-grid gap-2 col-6 mx-auto" >
 =======
     <<<<<<< HEAD <div class="d-grid gap-2 col-6 mx-auto">
 >>>>>>> 49dff0354aafd2cfc348a857cea21d56527d953c
+>>>>>>> 9242a61458c590f67e948ff670e44699ceda415b
         <button type="button" class="btn btn-primary" class="d-grid gap-2 d-md-block col-6 mx-auto"
             data-bs-toggle="modal" data-bs-target="#staticBackdrop">
             AGREGAR PROPIEDAD
         </button>
 <<<<<<< HEAD
+
+=======
+<<<<<<< HEAD
     </div>
 =======
         =======
+>>>>>>> 9242a61458c590f67e948ff670e44699ceda415b
         <div class="d-grid gap-2 col-6 mx-auto">
             <p class="text-center"><button type="button" class="btn btn-success"
                     class="d-grid gap-1 d-md-block col-1 mx-auto" data-bs-toggle="modal"
                     data-bs-target="#staticBackdrop">
-                    AGREGAR PROPIEDAD
-                    <<<<<<< HEAD </p>
-                        =======
-                </button> </p>
-            >>>>>>> a745dea985c703b123aebedbfe1111494ced14ba
-            >>>>>>> 36f71a9e88f5308695ce3a81b78a8592202bba2c
+                    AGREGAR PROPIEDAD </p>
+            </button> </p>
         </div>
 >>>>>>> 49dff0354aafd2cfc348a857cea21d56527d953c
 
@@ -136,4 +140,4 @@
                 </div>
             </div>
         </div>
-</div>
+    </div>
