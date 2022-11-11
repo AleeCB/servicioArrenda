@@ -17,7 +17,7 @@
 
 
 
-            <label>Comunicacion<input type="checkbox" value="val" name="name"></label>
+            <label>Comunicacion <input type="checkbox" value="val" name="name"></label>
             <label><input type="checkbox" value="val" name="name2"></label>
             <label><input type="checkbox" value="val" name="name3"></label>
             <label><input type="checkbox" value="val" name="name3"></label>
@@ -46,7 +46,7 @@
             <label><input type="checkbox" value="val" name="name3"></label></br>
 
 
-            <h4> ¿Recomendarias a este lugar? </h4>
+            <h4> ¿Recomendarias a este lugar....? </h4>
 
             <div class="form-check form-check-inline">
                 <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1"
