@@ -95,8 +95,11 @@
                 <div class="d-flex align-items-center justify-content-center"><a class="btn btn-success btn-sm"
                         href="<?=base_url('index.php/PropiedadesC/insertarPropiedad/')?>">
                         BUSCAR</a>
-                        <div>Nuevooooo</div>
-                </div>
+
+                <div class="d-flex align-items-Tackle justify-space-between"><a class="btn btn-success btn-sm"
+                        href="<?=base_url('index.php/PropiedadesC/calificacion/')?>">
+                            Agregar comentario y evaluar</a>
+
             </div>
         </div>
     </div>

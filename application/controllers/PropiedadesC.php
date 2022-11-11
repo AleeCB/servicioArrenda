@@ -1,5 +1,5 @@
 <?php
-//VAMO A VER SI YA APARECE EL LOGO JIJI
+
 class PropiedadesC extends CI_Controller
 {
 //VIVA CRISTO REEEEEEEEEEEEY SI AHUEVO JSJSJ
@@ -78,6 +78,8 @@ class PropiedadesC extends CI_Controller
         $this->load->view('vistaPropiedades/navegacionCasa.php', $data);
         $this->load->view('headers/footer.php');
     }
+
+
 //prueba
 }?>
 
