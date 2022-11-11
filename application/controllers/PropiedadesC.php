@@ -7,7 +7,7 @@ class PropiedadesC extends CI_Controller
         $data ['propiedades'] = $this->PropiedadesM->getPropiedades();
 
           $this->load->helper(array('form', 'url'));
-        
+            
                 $this->load->library('form_validation');
 
                 $this->form_validation->set_rules('servicio', 'servicio', 'required');
