@@ -7,7 +7,7 @@ class PropiedadesC extends CI_Controller
         $data ['propiedades'] = $this->PropiedadesM->getPropiedades();
 
           $this->load->helper(array('form', 'url'));
-        
+            
                 $this->load->library('form_validation');
 
                 $this->form_validation->set_rules('servicio', 'servicio', 'required');
@@ -15,7 +15,7 @@ class PropiedadesC extends CI_Controller
                 {
                     $this->load->view('headers/head.php');
                     $this->load->view('headers/menu.php');
-                    $this->load->view('vistaPropiedades/listaPropiedad.php', $data);
+                    $this->load->view('vistaPropiedades/listaPropiedades.php', $data);
                     $this->load->view('headers/footer.php');
                 }
                 else

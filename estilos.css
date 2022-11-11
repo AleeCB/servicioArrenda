@@ -1,0 +1,22 @@
+
+/*VISTA RESERVA PRINCIPAL*/
+body{
+  background-color: black ;
+}
+  .image1 {
+    height: 50px;/* max image height */
+    width: 100px;
+    border: 1px solid blue;
+    text-align: center;
+    }
+    .image1:before {
+    content:"";
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+    width: 1px;
+    }
+    img {
+    vertical-align: middle;
+    }
+    /*HASTA ACÁ - VISTA RESERVA PRINCIPAL*/

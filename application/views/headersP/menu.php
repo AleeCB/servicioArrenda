@@ -17,9 +17,8 @@
                 </li>
             </ul>
 
-
-            <button type="button" class="btn outline-dark" class="d-grid gap-2 d-md-block col-6 mx-auto"
-                data-bs-toggle="modal" data-bs-target="#iniciar"><svg xmlns="http://www.w3.org/2000/svg" width="35"
+            <button type="button"class="btn outline-dark" class="d-grid gap-2 d-md-block col-6 mx-auto" data-bs-toggle="modal"
+                        data-bs-target="#iniciar"><svg xmlns="http://www.w3.org/2000/svg" width="35"
                     height="35" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
                     <title>Iniciar sesión</title>
                     <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
@@ -106,20 +105,20 @@
                                     <div class="container">
                                         <div class="row">
                                             <div class="col-3 text-center">
-                                                <label>Nombre:</label>
+                                                <label for="example" class="form-label">Email:</label>
                                             </div>
                                             <div class="col-9">
-                                                <input type="text" class="form-control" name="nombre"
-                                                    class="w-10 p-3"><br>
+                                                <input type="email" name="correo" class="form-control" 
+                                                  id="" ><br>
                                             </div>
                                         </div>
                                         <div class="row">
                                             <div class="col-3 text-center">
-                                                <label>Contraseña: </label>
+                                            <label for="example" class="form-label">Contraseña:</label>
                                             </div>
                                             <div class="col-9">
-                                                <input type="text" class="form-control" name="nombre"
-                                                    class="w-10 p-3"><br>
+                                            <input type="password" name="contrasenia" class="form-control" 
+                                                  id="" ><br>
                                             </div>
                                         </div>
 
@@ -127,7 +126,7 @@
                             </div>
                             <div class="modal-footer tex-center">
                                 
-                            <a class="btn btn-outline-secondary text-black"   style=" background-color: #white;"href="#" role="button">Olvidé mi contraseña</a>
+                            <a class="btn btn-outline-secondary text-black"   style=" background-color: white" href="#" role="button">Olvidé mi contraseña</a>
                                 
                                 
                 </a>
@@ -135,12 +134,6 @@
                                 
                             </div>
         </form>
-    </div>
-    </div>
-    </div>
-    </div>
-    </div>
-    </form>
     </div>
 </nav>
 
