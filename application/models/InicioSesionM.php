@@ -9,6 +9,6 @@ class InicioSesionM extends CI_Model
 		$sql="Select IdArrendatario, correo, contrasenia from arrendatario where correo = '$Correo' and contrasenia = '$contrasenia'";
 		$query = $this->db->query($sql);
 		//echo $this->db->last_query();
-		return $query->result();
+		return $query->result();  
 	}
 }?>
