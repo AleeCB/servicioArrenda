@@ -99,27 +99,27 @@
                         </div>
                         <div class="modal-body" style="background-color: #31AFB4;">
                             <div class="container">
-                                <form action="<?=base_url('index.php/PropiedadesC/InsertarPropiedad')?>" method="POST">
+                                <form action="<?=base_url('index.php/PropiedadesC/')?>" method="POST">
                                     <br> <br>
                                     <h4 class="text-center">¡Bienvenodo a Foreigner's Site!</h4>
                                     <br>
                                     <div class="container">
                                         <div class="row">
                                             <div class="col-3 text-center">
-                                                <label>Nombre:</label>
+                                                <label for="example" class="form-label">Email:</label>
                                             </div>
                                             <div class="col-9">
-                                                <input type="text" class="form-control" name="nombre"
-                                                    class="w-10 p-3"><br>
+                                                <input type="email" name="correo" class="form-control" 
+                                                  id="" ><br>
                                             </div>
                                         </div>
                                         <div class="row">
                                             <div class="col-3 text-center">
-                                                <label>Contraseña: </label>
+                                            <label for="example" class="form-label">Contraseña:</label>
                                             </div>
                                             <div class="col-9">
-                                                <input type="text" class="form-control" name="nombre"
-                                                    class="w-10 p-3"><br>
+                                            <input type="password" name="contrasenia" class="form-control" 
+                                                  id="" ><br>
                                             </div>
                                         </div>
 
