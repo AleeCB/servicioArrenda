@@ -18,7 +18,7 @@ public function editarPerfil($IdArrendatario){
                 $this->load->view('headers/menu.php');
                 $this->load->view('vistaPropiedades/editarPerfil.php', $data);
                 $this->load->view('headers/footer.php');
-                $this->ArrendatarioM->editarPerfil();
+                $this->ArrendatarioM->editarPerfil($IdArrendatario);
                 redirect(base_url('index.php/ArrendatariosC/show'), 'refresh');
 }
 
