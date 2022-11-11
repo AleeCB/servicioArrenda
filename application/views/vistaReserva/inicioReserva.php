@@ -25,7 +25,7 @@
         <div class="row">
             <div class="col-5">
                 <img src=" https://ara.com.mx/api/files/casas-modelo-olivos-all-oli1.jpg "  
-                width="350" height="350 " class="img-thumbnail">
+                width="350" height="350" class="img-thumbnail">
             </div>
 
 
