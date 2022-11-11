@@ -3,8 +3,8 @@
 class PropiedadesC extends CI_Controller
 {
     public function show(){
-        $this->load->model('PropiedadesM');
-        $data ['propiedades'] = $this->PropiedadesM->getPropiedades();
+        $this->load->model('ReservasM');
+        $data ['reservas'] = $this->ReservaPrincipalM->getReservas();
 
           $this->load->helper(array('form', 'url'));
         
@@ -15,7 +15,7 @@ class PropiedadesC extends CI_Controller
                 {
                     $this->load->view('headers/head.php');
                     $this->load->view('headers/menu.php');
-                    $this->load->view('vistaPropiedades/listaPropiedad.php', $data);
+                    $this->load->view('vistaReservas/insertarReserva.php', $data);
                     $this->load->view('headers/footer.php');
                 }
                 else
