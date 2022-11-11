@@ -2,7 +2,6 @@
 
 class PropiedadesC extends CI_Controller
 {
-//VIVA CRISTO REEEEEEEEEEEEY SI AHUEVO JSJSJ
     public function show(){
         $this->load->model('PropiedadesM');
         $data ['propiedades'] = $this->PropiedadesM->getPropiedades();
@@ -83,3 +82,4 @@ class PropiedadesC extends CI_Controller
 //prueba
 }?>
 
+}?>
