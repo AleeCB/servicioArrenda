@@ -61,7 +61,7 @@
                 </div>
                 <div class="modal-footer">
                     <div class="d-grid gap-2 col-6 mx-auto">
-                        <button class="btn btn-primary" type="submit">ENVIAR</button>
+                        <button class="btn btn-primary" type="submit">GUARDAR</button>
                     </div>
                 </div>
                 </form>

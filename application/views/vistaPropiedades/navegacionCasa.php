@@ -94,10 +94,6 @@
                         height="200"></div><br>
                 <div class="d-flex align-items-center justify-content-center"><a class="btn btn-success btn-sm"
                         href="<?=base_url('index.php/PropiedadesC/insertarPropiedad/')?>">
-                        BUSCAR</a>
-                        <div>Nuevooooo</div>
-                </div>
+                        BUSCAR</a> 
             </div>
-        </div>
-    </div>
 </div>
