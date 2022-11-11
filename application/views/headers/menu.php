@@ -14,17 +14,17 @@
                     <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                 </div>
                 <div class="dropdown mt-3">
-                    <a href="index.php/PropiedadesC/perfil" type="button" class="btn btn-lg" style="color: white;">
+                    <a href="index.php/PropiedadesC/show" type="button" class="btn btn-lg" style="color: white;">
                         Perfil
                     </a>
                 </div>
                 <div class=" dropdown mt-1">
-                    <a href="index.php/PropiedadesC/perfil" type="button" class="btn btn-lg" style="color: white;">
+                    <a href="index.php/PropiedadesC/show" type="button" class="btn btn-lg" style="color: white;">
                         Mis propiedades
                     </a>
                 </div>
                 <div class="dropdown mt-1">
-                    <a href="index.php/ReservasC/show" type="button" class="btn btn-lg" style="color: white;">
+                    <a href='index.php/ReservasC/show' type="button" class="btn btn-lg" style="color: white;">
                         Reservas
                     </a>
                 </div>

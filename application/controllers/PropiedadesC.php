@@ -3,11 +3,11 @@
 class PropiedadesC extends CI_Controller
 {
     public function show(){
-        $this->load->model('ReservasM');
-        $data ['reservas'] = $this->ReservaPrincipalM->getReservas();
+        $this->load->model('PropiedadesM');
+        $data ['propiedades'] = $this->PropiedadesM->getPropiedades();
 
           $this->load->helper(array('form', 'url'));
-        
+            
                 $this->load->library('form_validation');
 
                 $this->form_validation->set_rules('servicio', 'servicio', 'required');
@@ -15,8 +15,13 @@ class PropiedadesC extends CI_Controller
                 {
                     $this->load->view('headers/head.php');
                     $this->load->view('headers/menu.php');
+<<<<<<< HEAD
                     $this->load->view('vistaReservas/insertarReserva.php', $data);
                     $this->load->view('headers/footer.php');    
+=======
+                    $this->load->view('vistaPropiedades/listaPropiedades.php', $data);
+                    $this->load->view('headers/footer.php');
+>>>>>>> 34e9e23e0ecd106bd0d99815c8785bed8696baa0
                 }
                 else
                 {
@@ -77,9 +82,5 @@ class PropiedadesC extends CI_Controller
         $this->load->view('vistaPropiedades/navegacionCasa.php', $data);
         $this->load->view('headers/footer.php');
     }
-
-
-//prueba
-}?>
 
 }?>
