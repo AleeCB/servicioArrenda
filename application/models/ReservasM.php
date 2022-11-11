@@ -3,7 +3,7 @@
  {
 
     function getReservas(){    
-       $query = $this->db->get('Reserva');
-       return $query->result();
+        $query = $this->db->get('reserva');
+        return $query->result();
     }
  } ?>
