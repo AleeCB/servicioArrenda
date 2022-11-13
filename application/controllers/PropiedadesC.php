@@ -36,6 +36,13 @@ class PropiedadesC extends CI_Controller
         $this->load->view('headers/footer.php');
     }
 
+
+
+
+
+
+
+    
     public function eliminarPropiedad($idPropiedad){
         $this->load->model('PropiedadesM');
         if($this->PropiedadesM->deletePropiedad($idPropiedad)){
