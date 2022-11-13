@@ -1,17 +1,19 @@
 <div class="container">
     <table class="table table-bordered">
-        <h1 class="text-center">Mis propiedades</h1>
-        <thead class="table-success">
-            <th class="text-center">Id</th>
-            <th class="text-center">Nombre de la propiedad</th>
-            <th class="text-center">Ubicación</th>
-            <th class="text-center">Número de habitantes</th>
-            <th class="text-center">Precio</th>
-            <th class="text-center">Estatus</th>
-            <th class="text-center">Amueblado</th>
-            <th class="text-center">Tipo de propiedad</th>
-            <th class="text-center">Foto</th>
-            <th class="text-center">ACCION</th>
+        <div class="alert alert-primary" role="alert">
+            <h1 class="text-center">Mis propiedades</h1>
+        </div>
+        <thead class="table" style="background-color: #09506C">
+            <th class="text-light">Id</th>
+            <th class="text-light">Nombre de la propiedad</th>
+            <th class="text-light">Ubicación</th>
+            <th class="text-light">Número de habitantes</th>
+            <th class="text-light">Precio</th>
+            <th class="text-light">Estatus</th>
+            <th class="text-light">Amueblado</th>
+            <th class="text-light">Tipo de propiedad</th>
+            <th class="text-light">Foto</th>
+            <th class="text-light">Acción</th>
         <tbody class="table-light">
             <?php foreach($propiedades as $key): ?>
             <tr>
