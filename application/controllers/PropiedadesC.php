@@ -28,12 +28,26 @@ class PropiedadesC extends CI_Controller
 
     public function editarPropiedad($idPropiedad){
         $this->load->model('PropiedadesM');
-        $data ['propiedades'] = $this->PropiedadesM->getPropiedad($idPropiedad);
+        $data ['propiedades'] = $this->PropiedadesM->getPropiedades($idPropiedad);
 
-        $this->load->view('headers/head.php');
-        $this->load->view('headers/menu.php');
-        $this->load->view('vistaPropiedades/editarPropiedad.php', $data);
-        $this->load->view('headers/footer.php');
+          $this->load->helper(array('form', 'url'));
+            
+                $this->load->library('form_validation');
+
+                $this->form_validation->set_rules('nombre', 'nombre', 'required');
+                if ($this->form_validation->run() == FALSE)
+                {
+                    $this->load->view('headers/head.php');
+                    $this->load->view('headers/menu.php');
+                    $this->load->view('vistaPropiedades/editarPropiedad', $data);
+                    $this->load->view('headers/footer.php');
+                }
+                else
+                {
+                        $this->PropiedadesM->editarPropiedad();
+                        redirect(base_url('index.php/PropiedadesC/show'), 'refresh');
+}
+                }
     }
 
 
