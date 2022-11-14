@@ -1,6 +1,6 @@
 <div class="container">
     <?php echo validation_errors(); ?>
-    <form action="<?=base_url('index.php/PropiedadesC/editarPerfil')?>" method="POST">
+    <form action="<?=base_url('index.php/PropiedadesC/editarPropiedad/').$propiedades[0]->idPropiedad?>" method="POST">
         <label>Nombre de la propiedad :</label>
         <input type="text" class="forma-control" name="nombre" value="<?=$propiedades[0]->nombre?>"><br><br>
         <label>Ubicacion:</label>
@@ -20,5 +20,6 @@
         <label>Foto principal:</label>
         <input type="file" class="forma-control" name="fotoPrincipal"
             value="<?=$propiedades[0]->fotoPrincipal?>"><br><br>
+        <input type="submit" value="Actualizar">
     </form>
 </div>

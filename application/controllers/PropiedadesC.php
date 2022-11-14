@@ -44,9 +44,9 @@ class PropiedadesC extends CI_Controller
                 }
                 else
                 {
-                        $this->PropiedadesM->editarPropiedad();
+                        $this->PropiedadesM->editarPropiedad($idPropiedad);
                         redirect(base_url('index.php/PropiedadesC/show'), 'refresh');
-}
+
                 }
     }
 
