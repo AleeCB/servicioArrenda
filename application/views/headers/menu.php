@@ -14,40 +14,39 @@
                     <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                 </div>
                 <div class="dropdown mt-3">
-                    <img src="https://cdn-icons-png.flaticon.com/128/1946/1946429.png" alt="" width="50" height="50">
-                    <a href="index.php/PropiedadesC/show" type="button" class="btn btn-lg" style="color: white;">
-                        Perfil
-                    </a>
+                    <a class="btn btn-lg" style="color: white;" href="<?=base_url('index.php/ArrendatarioC/show/')?>"
+                        role="button"> <img src="https://cdn-icons-png.flaticon.com/128/1946/1946429.png" alt=""
+                            width="50" height="50">Perfil</a>
                 </div>
                 <div class=" dropdown mt-3">
-                    <img src="https://cdn-icons-png.flaticon.com/128/845/845022.png" alt="" width="40" height="40">
-                    <a href="index.php/PropiedadesC/show" type="button" class="btn btn-lg" style="color: white;">
-                        Mis propiedades
-                    </a>
-                </div>
-                <div class="dropdown mt-3">
-                    <img src="https://cdn-icons-png.flaticon.com/128/5576/5576900.png" alt="" width="50" height="50">
-                    <a href='index.php/ReservasC/show' type="button" class="btn btn-lg" style="color: white;">
-                        Reservas
-                    </a>
-                </div>
-            </div>
+                    <a class="btn btn-lg" style="color: white;" href="<?=base_url('index.php/PropiedadesC/show/')?>"
+                        role="button">
+                        <img src="https://cdn-icons-png.flaticon.com/128/845/845022.png" alt="" width="40"
+                            height="40">Mis propiedades</a>
         </a>
-        <div>
-            <!-- Botón para lo del perfil -->
-            <div class="btn-group">
-                <button type="button" class="btn btn-danger dropdown-toggle" data-bs-toggle="dropdown"
-                    aria-expanded="false">
-                    Pedro
-                </button>
-                <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Perfil</a></li>
-                    <li><a class="dropdown-item" href="#">Cerrar sesión</a></li>
-                    <li>
-                        <hr class="dropdown-divider">
-                    </li>
-                </ul>
-            </div>
+    </div>
+    <div class="dropdown mt-3">
+        <a class="btn btn-lg" style="color: white;" href="<?=base_url('index.php/ReservasC/show/')?>" role="button">
+            <img src="https://cdn-icons-png.flaticon.com/128/5576/5576900.png" alt="" width="50"
+                height="50">Reservas</a>
+    </div>
+    </div>
+    </a>
+    <div>
+        <!-- Botón para lo del perfil -->
+        <div class="btn-group">
+            <button type="button" class="btn btn-danger dropdown-toggle" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Pedro
+            </button>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Perfil</a></li>
+                <li><a class="dropdown-item" href="#">Cerrar sesión</a></li>
+                <li>
+                    <hr class="dropdown-divider">
+                </li>
+            </ul>
         </div>
+    </div>
     </div>
 </nav>

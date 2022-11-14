@@ -11,12 +11,22 @@
         <label>Precio:</label>
         <input type="number" class="forma-control" name="precio" value="<?=$propiedades[0]->precio?>"><br><br>
         <label>Estatus:</label>
-        <input type="text" class="forma-control" name="estatus" value="<?=$propiedades[0]->estatus?>"><br><br>
+        <select name="estatus" id="">
+            <option value="1">Disponible</option>
+            <option value="2">No disponible</option>
+        </select value="<?=$propiedades[0]->estatus?>"><br><br>
         <label>Amueblado:</label>
-        <input type="text" class="forma-control" name="amueblado" value="<?=$propiedades[0]->amueblado?>"><br><br>
+        <select name="amueblado" id="">
+            <option value="1">Amueblado</option>
+            <option value="2">No amueblado</option>
+        </select value="<?=$propiedades[0]->amueblado?>"><br><br>
         <label>Tipo de propiedad:</label>
-        <input type="text" class="forma-control" name="tipoPropiedad"
-            value="<?=$propiedades[0]->tipoPropiedad?>"><br><br>
+        <select name="tipoPropiedad" id="">
+            <option value="1">Casa</option>
+            <option value="2">Pensión</option>
+            <option value="3">Cuarto</option>
+            <option value="4">Departamento</option>
+        </select value="<?=$propiedades[0]->tipoPropiedad?>"><br><br>
         <label>Foto principal:</label>
         <input type="file" class="forma-control" name="fotoPrincipal"
             value="<?=$propiedades[0]->fotoPrincipal?>"><br><br>

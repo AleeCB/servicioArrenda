@@ -24,7 +24,6 @@ class PropiedadesC extends CI_Controller
                 }
         }
 
-    
 
     public function editarPropiedad($idPropiedad){
         $this->load->model('PropiedadesM');
@@ -75,6 +74,7 @@ class PropiedadesC extends CI_Controller
                         $this->load->view('headers/head.php');
                         $this->load->view('headers/menu.php');
                         $this->load->view('headers/footer.php');
+                        $this->load->view('vistaPropiedades/insertarPropiedad.php');
                 }
                 else
                 {

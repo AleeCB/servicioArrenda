@@ -1,14 +1,16 @@
 <div class="container">
     <table class="table table-bordered">
-        <h1 class="text-center">Mis reservas</h1>
-        <thead class="table-success">
-            <th class="text-center">idArrendatario</th>
-            <th class="text-center">idPropiedad</th>
-            <th class="text-center">Nombre de la propiedad</th>
-            <th class="text-center">Fecha inicio</th>
-            <th class="text-center">Fecha fin</th>
-            <th class="text-center">Número de huésped</th>
-        <tbody class="table-light" class="text-center">
+        <div class="alert alert-warning" role="alert">
+            <h1 class="text-center">Mis reservas</h1>
+        </div>
+        <thead class="table" style="background-color: #F1CB27">
+            <th class="text-black text-center">idArrendatario</th>
+            <th class="text-black text-center">idPropiedad</th>
+            <th class="text-black text-center">Nombre de la propiedad</th>
+            <th class="text-black text-center">Fecha de inicio</th>
+            <th class="text-black text-center">Fecha de fin</th>
+            <th class="text-black text-center">Número de huéspedes</th>
+        <tbody class="table-light text-center">
             <?php foreach($reservas as $key): ?>
             <tr>
                 <td><?=$key->idArrendatario?></td>
