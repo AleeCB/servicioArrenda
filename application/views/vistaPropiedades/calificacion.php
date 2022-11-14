@@ -8,7 +8,8 @@
             <p><textarea name="comentario" rows="6" cols="55"> </textarea></p>
 
             <h4> Califica según tu vivencia (Obligatorio) </h4><br>
-            <label>Limpieza <input type="checkbox" value="val" name="name"></label>
+            <h5>Limpieza</h5>
+            <label><input type="checkbox" value="val" name="name"></label>
             <label><input type="checkbox" value="val" name="name2"></label>
             <label><input type="checkbox" value="val" name="name3"></label>
             <label><input type="checkbox" value="val" name="name3"></label>
@@ -44,7 +45,6 @@
             <label><input type="checkbox" value="val" name="name3"></label>
             <label><input type="checkbox" value="val" name="name3"></label>
             <label><input type="checkbox" value="val" name="name3"></label></br>
-
 
             <h4> ¿Recomendarias a este lugar....? </h4>
 
