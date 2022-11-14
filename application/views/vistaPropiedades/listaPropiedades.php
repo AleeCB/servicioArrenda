@@ -1,17 +1,20 @@
 <div class="container">
     <table class="table table-bordered">
-        <h1 class="text-center">Mis propiedades</h1>
-        <thead class="table-success">
-            <th class="text-center">Id</th>
-            <th class="text-center">Nombre de la propiedad</th>
-            <th class="text-center">Ubicación</th>
-            <th class="text-center">Número de habitantes</th>
-            <th class="text-center">Precio</th>
-            <th class="text-center">Estatus</th>
-            <th class="text-center">Amueblado</th>
-            <th class="text-center">Tipo de propiedad</th>
-            <th class="text-center">Foto</th>
-            <th class="text-center">ACCION</th>
+        <div class="alert alert-primary" role="alert">
+            <h1 class="text-center">Mis propiedades</h1>
+        </div>
+        <thead class="table" style="background-color: #09506C">
+            <th class="text-white" style="text-center">Id</th>
+            <th class="text-white" style="text-center">Nombre de la propiedad</th>
+            <th class="text-white" style="text-center">Ubicación</th>
+            <th class="text-white" style="text-center">Número de habitantes</th>
+            <th class="text-white" style="text-center">Precio</th>
+            <th class="text-white" style="text-center">Estatus</th>
+            <th class="text-white" style="text-center">Amueblado</th>
+            <th class="text-white" style="text-center">Tipo de propiedad</th>
+            <th class="text-white" style="text-center">Foto</th>
+            <th class="text-white" style="text-center">Acción</th>
+        </thead>
         <tbody class="table-light">
             <?php foreach($propiedades as $key): ?>
             <tr>
@@ -25,6 +28,7 @@
                 <td><?=$key->tipoPropiedad?></td>
                 <td><?=$key->fotoPrincipal?></td>
                 <td>
+<<<<<<< HEAD
                     <!-- Button trigger modal -->
                     <div class="d-grid gap-2 col-6 mx-auto">
                         <p class="text-center"><button type="button" class="btn btn-info"
@@ -58,12 +62,17 @@
                                 </div>
                             </div>
                         </div>
+=======
+                    <a class="btn btn-info"
+                        href="<?=base_url('index.php/PropiedadesC/editarPropiedad/').$key->idPropiedad?>">EDITAR
+                    </a>
+>>>>>>> 43ce9365449030caa1fa298e37d1f27e90f08a7f
                 </td>
             </tr>
             <?php endforeach ?>
         </tbody>
-        </thead>
     </table>
+<<<<<<< HEAD
     <!-- Button trigger modal -->
 
     <div class="d-grid gap-2 col-6 mx-auto">
@@ -78,6 +87,14 @@
         </div>
 
         <!-- Modal -->
+=======
+    <a class="btn btn-info" href="<?=base_url('index.php/PropiedadesC/insertarPropiedad/').$key->idPropiedad ?>"
+        type="button">AGREGAR PROPIEDAD
+    </a>
+</div>
+
+<!-- Modal 
+>>>>>>> 43ce9365449030caa1fa298e37d1f27e90f08a7f
         <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
             aria-labelledby="staticBackdropLabel" aria-hidden="true">
             <div class="modal-dialog">
@@ -152,4 +169,4 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div>-->

@@ -52,16 +52,27 @@
                 </div>
                 <div class="modal-body">
                     <div class="container">
-                        <p>Fecha de nacimiento: <?=$arrendatarios[0]->fechaNacimiento?></p>
-                        <p>Correo electrónico: <?=$arrendatarios[0]->correo?></p>
-                        <p>Credencial de estudiante: <?=$arrendatarios[0]->credencialEstudiante?></p>
-                        <p>Lugar de origen: <?=$arrendatarios[0]->lugarOrigen?></p>
-                        <p>Foto: <?=$arrendatarios[0]->foto?></p>
+                        <form action="<?=base_url('index.php/ArrendatarioC/editarPerfil')?>" method="POST"></form>
+                        <label>Fecha de nacimiento:</label>
+                        <input type="date" class="forma-control" name="fechaNacimiento"
+                            value="<?=$arrendatarios[0]->fechaNacimiento?>"><br><br>
+                        <label>Correo electrónico:</label>
+                        <input type="text" class="forma-control" name="correo"
+                            value="<?=$arrendatarios[0]->correo?>"><br><br>
+                        <label>Credencial de estudiante:</label>
+                        <input type="file" class="forma-control" name="credencialEstudiante"
+                            value="<?=$arrendatarios[0]->credencialEstudiante?>"><br><br>
+                        <label>Lugar de origen:</label>
+                        <input type="text" class="forma-control" name="lugarOrigen"
+                            value="<?=$arrendatarios[0]->lugarOrigen?>"><br><br>
+                        <label>Foto:</label>
+                        <input type="file" class="forma-control" name="foto"
+                            value="<?=$arrendatarios[0]->foto?>"><br><br>
                     </div>
                 </div>
                 <div class="modal-footer">
                     <div class="d-grid gap-2 col-6 mx-auto">
-                        <button class="btn btn-primary" type="submit">GUARDAR</button>
+                        <button class="btn btn-primary" type="submit" value="Actualizar">GUARDAR</button>
                     </div>
                 </div>
                 </form>

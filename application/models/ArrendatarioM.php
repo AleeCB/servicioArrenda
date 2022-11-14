@@ -6,4 +6,19 @@
         $query = $this->db->get('arrendatario');
         return $query->result();
     }
+
+    function editarPropiedad($idArrendatario){
+        $data = array(
+            'Fecha de nacimiento' => $this->input->post('fechaNacimiento'),
+            'Correo electrónico' => $this->input->post('correo'),
+            'Credencial de estudiante' => $this->input->post('credencialEstudiante'),
+            'Lugar de origen' => $this->input->post('lugarOrigen'),
+            'Foto' => $this->input->post('foto'),
+    );
+    
+    $this->db->where('IdArrendatario', $idArrendatario);
+    $this->db->update('arrendatario', $data);
+    }
+
+
  } ?>

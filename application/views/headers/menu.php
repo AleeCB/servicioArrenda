@@ -14,17 +14,20 @@
                     <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                 </div>
                 <div class="dropdown mt-3">
-                    <a href="index.php/PropiedadesC/perfil" type="button" class="btn btn-lg" style="color: white;">
+                    <img src="https://cdn-icons-png.flaticon.com/128/1946/1946429.png" alt="" width="50" height="50">
+                    <a href="index.php/PropiedadesC/show" type="button" class="btn btn-lg" style="color: white;">
                         Perfil
                     </a>
                 </div>
-                <div class=" dropdown mt-1">
-                    <a href="index.php/PropiedadesC/perfil" type="button" class="btn btn-lg" style="color: white;">
+                <div class=" dropdown mt-3">
+                    <img src="https://cdn-icons-png.flaticon.com/128/845/845022.png" alt="" width="40" height="40">
+                    <a href="index.php/PropiedadesC/show" type="button" class="btn btn-lg" style="color: white;">
                         Mis propiedades
                     </a>
                 </div>
-                <div class="dropdown mt-1">
-                    <a href="index.php/ReservasC/show" type="button" class="btn btn-lg" style="color: white;">
+                <div class="dropdown mt-3">
+                    <img src="https://cdn-icons-png.flaticon.com/128/5576/5576900.png" alt="" width="50" height="50">
+                    <a href='index.php/ReservasC/show' type="button" class="btn btn-lg" style="color: white;">
                         Reservas
                     </a>
                 </div>
@@ -47,8 +50,4 @@
             </div>
         </div>
     </div>
-</nav>
-
-
-
 </nav>

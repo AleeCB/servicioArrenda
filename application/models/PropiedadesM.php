@@ -41,4 +41,22 @@
     $this->db->insert('propiedad', $data);
     }
 
+
+    function editarPropiedad($idPropiedad){
+        $data = array(
+            'Nombre de la propiedad' => $this->input->post('nombre'),
+            'Ubicacion' => $this->input->post('ubicacion'),
+            'Número de habitantes:' => $this->input->post('numHabitantes'),
+            'Precio:' => $this->input->post('precio'),
+            'Estatus:' => $this->input->post('estatus'),
+            'Amueblado:' => $this->input->post('amueblado'),
+            'Ubicacion' => $this->input->post('ubicacion'),
+            'Tipo de propiedad:' => $this->input->post('tipoPropiedad'),
+            'Foto principal:' => $this->input->post('fotoPrincipal'),
+    );
+    
+    $this->db->where('IdPropiedad', $idPropiedad);
+    $this->db->update('propiedad', $data);
+    }
+
  } ?>

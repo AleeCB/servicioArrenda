@@ -99,4 +99,8 @@ class PropiedadesC extends CI_Controller
         $this->load->view('headers/footer.php');
     }
 
+<<<<<<< HEAD
 }?>
+=======
+}?>
+>>>>>>> 43ce9365449030caa1fa298e37d1f27e90f08a7f
