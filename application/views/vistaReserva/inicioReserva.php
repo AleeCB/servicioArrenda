@@ -164,7 +164,7 @@
                 <label class="form-check-label" for="inlineRadio2"></label>
             </div></br>
 
-            <input type="submit" value="Enviar">
+            <input type="submit" value="Enviar" class="btn btn-primary">
         </div>
     </div>
 </div>
