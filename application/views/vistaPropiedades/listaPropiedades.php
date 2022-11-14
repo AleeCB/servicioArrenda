@@ -27,7 +27,7 @@
                 <td><?=$key->amueblado?></td>
                 <td><?=$key->tipoPropiedad?></td>
                 <td><?=$key->fotoPrincipal?></td>
-                <td>
+                <td> 
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
