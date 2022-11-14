@@ -82,9 +82,9 @@
             </div>
             <div class="col-4">
                 <a class="btn btn-primary btn-lg" href="#" role="button">Agregar reserva</a>
-                <a class="btn btn-primary btn-lg" href="<?=base_url('index.php/PropiedadesC/show/')?>"
-                    role="button">Agregar comentario</a>
-            </div>
+                <a class="btn btn-primary btn-lg" href="<?=base_url('index.php/CalificacionC/show/')?>"
+                    role="button">Agregar comentario y evaluar</a>
+            </div>  
         </div>
 
     </div>

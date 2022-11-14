@@ -20,3 +20,28 @@ body{
     vertical-align: middle;
     }
     /*HASTA ACÁ - VISTA RESERVA PRINCIPAL*/
+
+
+    /*HASTA ACÁ - CALIFICACION*/
+    input[type=checkbox] {
+      display:none;
+      }
+       
+      input[type=checkbox] + label
+      {
+      background: url("https://image.freepik.com/free-icon/thumb-up-to-like-on-facebook_318-37196.jpg") no-repeat;
+      background-size: 50%;
+      height: 250px;
+      width: 250px;
+      display:inline-block;
+      padding: 0 0 0 0px;
+      }
+      input[type=checkbox]:checked + label
+      {
+      background: url("http://icon-icons.com/icons2/936/PNG/512/thumb-down_icon-icons.com_73371.png") no-repeat;
+      background-size: 50%;
+      height: 250px;
+      width: 250px;
+      display:inline-block;
+      padding: 0 0 0 0px;
+      }
