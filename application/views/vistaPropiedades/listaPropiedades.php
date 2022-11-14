@@ -28,22 +28,85 @@
                 <td><?=$key->tipoPropiedad?></td>
                 <td><?=$key->fotoPrincipal?></td>
                 <td>
+<<<<<<< HEAD
                     <a class=" btn btn-info"
+=======
+<<<<<<< HEAD
+                    <!-- Button trigger modal -->
+                    <div class="d-grid gap-2 col-6 mx-auto">
+                        <p class="text-center"><button type="button" class="btn btn-info"
+                                class="d-grid gap-1 d-md-block col-1 mx-auto" data-bs-toggle="modal"
+                                data-bs-target="#staticBackdrop">
+                                EDITAR
+                            </button>
+                        </p>
+                        <!-- Modal -->
+                        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false"
+                            tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h1 class="modal-title fs-5" id="staticBackdropLabel">EDITAR PROPIEDAD</h1>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="container">
+                                            <p>Nombre de la propiedad :<?=$propiedades[0]->nombre?></p>
+                                            <p>Ubicacion: <?=$propiedades[0]->ubicacion?></p>
+                                            <p>Número de habitantes: <?=$propiedades[0]->numHabitantes?></p>
+                                            <p>Precio: <?=$propiedades[0]->precio?></p>
+                                            <p>Estatus: <?=$propiedades[0]->estatus?></p>
+                                            <p>Amueblado: <?=$propiedades[0]->amueblado?></p>
+                                            <p>Tipo de propiedad: <?=$propiedades[0]->tipoPropiedad?></p>
+                                            <p>Foto principal: <?=$propiedades[0]->fotoPrincipal?></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+=======
+                    <a class="btn btn-info"
+>>>>>>> d1f2a6288c7dbfca84d2b133688bdcd88ca0ec51
                         href="<?=base_url('index.php/PropiedadesC/editarPropiedad/').$key->idPropiedad?>">EDITAR
                     </a>
+>>>>>>> 43ce9365449030caa1fa298e37d1f27e90f08a7f
                 </td>
             </tr>
             <?php endforeach ?>
         </tbody>
     </table>
+<<<<<<< HEAD
     <div class="d-grid gap-1 col-2 mx-auto">
         <a class="btn btn-success" href="<?=base_url('index.php/PropiedadesC/insertarPropiedad/')?>"
             type="button">AGREGAR PROPIEDAD
         </a>
     </div>
+=======
+<<<<<<< HEAD
+    <!-- Button trigger modal -->
+
+    <div class="d-grid gap-2 col-6 mx-auto">
+        <div class="d-grid gap-2 col-6 mx-auto">
+
+            <div class="d-grid gap-2 col-6 mx-auto">
+                <button type="button" class="btn btn-primary" class="d-grid gap-2 d-md-block col-6 mx-auto"
+                    data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                    AGREGAR PROPIEDAD
+                </button>
+            </div>
+        </div>
+
+        <!-- Modal -->
+=======
+    <a class="btn btn-info" href="<?=base_url('index.php/PropiedadesC/insertarPropiedad/').$key->idPropiedad ?>"
+        type="button">AGREGAR PROPIEDAD
+    </a>
+>>>>>>> d1f2a6288c7dbfca84d2b133688bdcd88ca0ec51
 </div>
 
 <!-- Modal 
+>>>>>>> 43ce9365449030caa1fa298e37d1f27e90f08a7f
         <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
             aria-labelledby="staticBackdropLabel" aria-hidden="true">
             <div class="modal-dialog">

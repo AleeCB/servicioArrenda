@@ -10,7 +10,17 @@
 </head>
 
 <body>
-    <div class="row" style="background-color: white">
+
+    <style>
+        body{
+                background-color: #99D9EA;
+        }
+        hr{
+            height: 3px;
+            background-color: black;
+        }
+    </style>
+    <div class="row">
         <div class="col-4">
             <hr style="color: gray; background-color: black; width:100%;" />
         </div>
@@ -81,64 +91,212 @@
                 </h3>
             </div>
             <div class="col-4">
-                <a class="btn btn-primary btn-lg" href="#" role="button">Agregar reserva</a>
-                <a class="btn btn-primary btn-lg" href="<?=base_url('index.php/CalificacionC/show/')?>"
-                    role="button">Agregar comentario y evaluar</a>
-            </div>  
+            <a class="btn btn-primary btn-lg" href="<?=base_url('index.php/ReservaPrincipalC/insertarReserva/')?>"
+                role="button">Agregar Reserva</a>
+            <a class="btn btn-primary btn-lg" href="<?=base_url('index.php/CalificacionC/show/')?>"
+                role="button">Agregar comentario</a>
         </div>
-
     </div>
+    <hr>
+<!-- <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<COMENTARIOS>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> -->
+<div class="linea"></div>
+<div class="container">
+    <h1 class="text-left">COMENTARIOS</h1><br></br>
 
-</body>
+    <div class="row">
 
-</html>
-
-<!-- <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<PIE DE PÁGINA>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> -->
-</main>
-<footer class="bd-footer">
-    <div class="pt-3 pb-3" style="background:#A6A6A6">
-        <div class="container">
+        <div class="col-6">
             <div class="row">
-                <div class="col-lg text-white d-flex align-items-center">
-                    <img class=" d-none d-lg-block"
-                        src="https://dewey.tailorbrands.com/production/brand_version_mockup_image/281/7826038281_05bdbfb5-ba7b-4213-9e02-3488afd0c93c.png?cb=1667763509"
-                        alt="" />
+                <div class="col-1">
+                    <img src="https://cdn-icons-png.flaticon.com/512/1946/1946429.png" alt="" width="30px" height="30px">
                 </div>
-                <div class="col-lg text-white">
-                    <div class="pt-2 pb-2">
-                        <strong>Acerca del Foreigner´s Site</strong>
-                    </div>
-                    <p>Quiénes somos</p>
-                    <p>Marco normativo</p>
-                    <p>Transparencia</p>
-                    <p>Desarrolladores</p>
-                </div>
-                <div class="col-lg text-white">
-                    <div class="pt-2 pb-2">
-                        <strong>Contacto</strong>
-                    </div>
-                    <p>231 564 52 41</p>
-                    <p>Chat</p>
-                    <p>atencion.usuarios@siteF.com</p>
-                    <p>Solicitud de información</p>
+            </div>
 
-                    <div class="mt-3 mb-3">
+            <h4> Califica según tu vivencia (Obligatorio) </h4><br>
+            <label>Limpieza <input type="checkbox" value="val" name="name"></label>
+            <label><input type="checkbox" value="val" name="name2"></label>
+            <label><input type="checkbox" value="val" name="name3"></label>
+            <label><input type="checkbox" value="val" name="name3"></label>
+            <label><input type="checkbox" value="val" name="name3"></label>
+            <label><input type="checkbox" value="val" name="name3"></label></br>
 
-                    </div>
-                </div>
-                <div class="col-lg text-white">
-                    <div class="pt-2 pb-2">
-                        <strong>Sitios de interés</strong>
-                    </div>
-                    <a class="text-white d-block" target="_blank" href="https://teziutlan.tecnm.mx/"><img
-                            src="https://teziutlan.tecnm.mx/wp-content/uploads/2019/03/itst_footer_logo.png" width="130"
-                            height="40"></a>
 
+
+            <label>Comunicacion<input type="checkbox" value="val" name="name"></label>
+            <label><input type="checkbox" value="val" name="name2"></label>
+            <label><input type="checkbox" value="val" name="name3"></label>
+            <label><input type="checkbox" value="val" name="name3"></label>
+            <label><input type="checkbox" value="val" name="name3"></label>
+            <label><input type="checkbox" value="val" name="name3"></label></br>
+
+            <label>Ubicacion <input type="checkbox" value="val" name="name"></label>
+            <label><input type="checkbox" value="val" name="name2"></label>
+            <label><input type="checkbox" value="val" name="name3"></label>
+            <label><input type="checkbox" value="val" name="name3"></label>
+            <label><input type="checkbox" value="val" name="name3"></label>
+            <label><input type="checkbox" value="val" name="name3"></label></br>
+
+            <label>Calidad-Precio <input type="checkbox" value="val" name="name"></label>
+            <label><input type="checkbox" value="val" name="name2"></label>
+            <label><input type="checkbox" value="val" name="name3"></label>
+            <label><input type="checkbox" value="val" name="name3"></label>
+            <label><input type="checkbox" value="val" name="name3"></label>
+            <label><input type="checkbox" value="val" name="name3"></label></br>
+
+            <label>Veracidad <input type="checkbox" value="val" name="name"></label>
+            <label><input type="checkbox" value="val" name="name2"></label>
+            <label><input type="checkbox" value="val" name="name3"></label>
+            <label><input type="checkbox" value="val" name="name3"></label>
+            <label><input type="checkbox" value="val" name="name3"></label>
+            <label><input type="checkbox" value="val" name="name3"></label></br>
+
+
+            <h4> ¿Recomendarias a este lugar? </h4>
+
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1"
+                    value="option1">
+                <label class="form-check-label" for="inlineRadio1"></label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2"
+                    value="option2">
+                <label class="form-check-label" for="inlineRadio2"></label>
+            </div></br>
+
+            <input type="submit" value="Enviar">
+        </div>
+    </div>
+</div>
+
+    <!-- <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<VENTANA RESERVA>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> -->
+
+
+
+    <!-- Modal
+<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="staticBackdropLabel">NUEVA RESERVA</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="container">
+                            <form action="<?=base_url('index.php/ReservaPrincipalC/insertarReserva')?>" method="POST">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-1">
+                                        </div>
+                                        <div class="col-2">
+                                            <input type="date" class="form-control" class="w-10 p-3"
+                                                name="fotoPrincipal">
+                                            <label>Fecha Inicio:</label>
+                                        </div>
+                                        <div class="col-2">
+                                            <input type="date" class="form-control" class="w-10 p-3"
+                                                name="fotoPrincipal">
+                                            <label>Fecha fin:</label>
+                                        </div>
+                                        <div class="col-2">
+                                            <input type="number" class="form-control" class="w-10 p-3"
+                                                name="fotoPrincipal">
+                                            <label>Numero Habitantes:</label>
+                                        </div>
+                        </div>
+                    </div>  
+                    <div class="modal-footer">
+                        <div class="d-grid gap-2 col-6 mx-auto">
+                            <button class="btn btn-primary" type="submit">RESERVAR</button>
+                        </div>
+                    </div>
+                    </form>
                 </div>
             </div>
         </div>
-    </div>
-    <div class="text-center  pt-3 pb-3"> Derechos reservados © Comhar <p style="color: blue; "> Privacidad y Condiciones
-        </p>
+</body>
 
+
+</html>-->
+
+    <!-- <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<PIE DE PÁGINA>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div>
+        <footer class="bd-footer">
+            <div class="pt-3 pb-3" style="background:#A6A6A6">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg text-white d-flex align-items-center">
+                            <img class=" d-none d-lg-block"
+                                src="https://dewey.tailorbrands.com/production/brand_version_mockup_image/281/7826038281_05bdbfb5-ba7b-4213-9e02-3488afd0c93c.png?cb=1667763509"
+                                alt="" />
+                        </div>
+                        <div class="col-lg text-white">
+                            <div class="pt-2 pb-2">
+                                <strong>Acerca del Foreigner´s Site</strong>
+                            </div>
+                            <p>Quiénes somos</p>
+                            <p>Marco normativo</p>
+                            <p>Transparencia</p>
+                            <p>Desarrolladores</p>
+                        </div>
+                        <div class="col-lg text-white">
+                            <div class="pt-2 pb-2">
+                                <strong>Contacto</strong>
+                            </div>
+                            <p>231 564 52 41</p>
+                            <p>Chat</p>
+                            <p>atencion.usuarios@siteF.com</p>
+                            <p>Solicitud de información</p>
+
+                            <div class="mt-3 mb-3">
+
+                            </div>
+                        </div>
+                        <div class="col-lg text-white">
+                            <div class="pt-2 pb-2">
+                                <strong>Sitios de interés</strong>
+                            </div>
+                            <a class="text-white d-block" target="_blank" href="https://teziutlan.tecnm.mx/"><img
+                                    src="https://teziutlan.tecnm.mx/wp-content/uploads/2019/03/itst_footer_logo.png"
+                                    width="130" height="40"></a>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center  pt-3 pb-3"> Derechos reservados © Comhar <p style="color: blue; "> Privacidad y
+                    Condiciones
+                </p>
+
+            </div>
     </div>
