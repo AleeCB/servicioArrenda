@@ -1,6 +1,11 @@
 <div class="container">
-    <div class="alert alert-danger text-center" role="alert">
-        <h1>NUEVA PROPIEDAD</h1>
+    <div class="alert alert-primary d-flex align-items-center" role="alert">
+        <svg class="bi flex-shrink-0 me-2" role="img" aria-label="Info:">
+            <use xlink:href="#info-fill" />
+        </svg>
+        <div>
+            NUEVA PROPIEDAD
+        </div>
     </div>
     <?php echo validation_errors(); ?>
     <form action="<?=base_url('index.php/PropiedadesC/insertarPropiedad')?>" method="POST">
