@@ -4,18 +4,18 @@
             <h1 class="text-center">Mis propiedades</h1>
         </div>
         <thead class="table" style="background-color: #09506C">
-            <th class="text-white" style="text-center">Id</th>
-            <th class="text-white" style="text-center">Nombre de la propiedad</th>
-            <th class="text-white" style="text-center">Ubicación</th>
-            <th class="text-white" style="text-center">Número de habitantes</th>
-            <th class="text-white" style="text-center">Precio</th>
-            <th class="text-white" style="text-center">Estatus</th>
-            <th class="text-white" style="text-center">Amueblado</th>
-            <th class="text-white" style="text-center">Tipo de propiedad</th>
-            <th class="text-white" style="text-center">Foto</th>
-            <th class="text-white" style="text-center">Acción</th>
+            <th class="text-white text-center">Id</th>
+            <th class="text-white text-center">Nombre de la propiedad</th>
+            <th class="text-white text-center">Ubicación</th>
+            <th class="text-white text-center">Número de habitantes</th>
+            <th class="text-white text-center">Precio</th>
+            <th class="text-white text-center">Estatus</th>
+            <th class="text-white text-center">Amueblado</th>
+            <th class="text-white text-center">Tipo de propiedad</th>
+            <th class="text-white text-center">Foto</th>
+            <th class="text-white text-center">Acción</th>
         </thead>
-        <tbody class="table-light">
+        <tbody class="table-light text-center">
             <?php foreach($propiedades as $key): ?>
             <tr>
                 <td><?=$key->idPropiedad?></td>
@@ -28,7 +28,7 @@
                 <td><?=$key->tipoPropiedad?></td>
                 <td><?=$key->fotoPrincipal?></td>
                 <td>
-                    <a class="btn btn-info"
+                    <a class=" btn btn-info"
                         href="<?=base_url('index.php/PropiedadesC/editarPropiedad/').$key->idPropiedad?>">EDITAR
                     </a>
                 </td>
@@ -36,9 +36,11 @@
             <?php endforeach ?>
         </tbody>
     </table>
-    <a class="btn btn-info" href="<?=base_url('index.php/PropiedadesC/insertarPropiedad/').$key->idPropiedad ?>"
-        type="button">AGREGAR PROPIEDAD
-    </a>
+    <div class="d-grid gap-1 col-2 mx-auto">
+        <a class="btn btn-success" href="<?=base_url('index.php/PropiedadesC/insertarPropiedad/')?>"
+            type="button">AGREGAR PROPIEDAD
+        </a>
+    </div>
 </div>
 
 <!-- Modal 

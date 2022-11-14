@@ -50,12 +50,11 @@
             'Precio:' => $this->input->post('precio'),
             'Estatus:' => $this->input->post('estatus'),
             'Amueblado:' => $this->input->post('amueblado'),
-            'Ubicacion' => $this->input->post('ubicacion'),
             'Tipo de propiedad:' => $this->input->post('tipoPropiedad'),
             'Foto principal:' => $this->input->post('fotoPrincipal'),
     );
     
-    $this->db->where('IdPropiedad', $idPropiedad);
+    $this->db->where('idPropiedad', $idPropiedad);
     $this->db->update('propiedad', $data);
     }
 

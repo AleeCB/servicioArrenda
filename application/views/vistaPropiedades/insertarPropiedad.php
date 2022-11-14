@@ -1,5 +1,7 @@
-<div class="container"> 
-    <h1>NUEVA PROPIEDAD</h1>
+<div class="container">
+    <div class="alert alert-danger text-center" role="alert">
+        <h1>NUEVA PROPIEDAD</h1>
+    </div>
     <?php echo validation_errors(); ?>
     <form action="<?=base_url('index.php/PropiedadesC/insertarPropiedad')?>" method="POST">
         <div class="container">
@@ -37,11 +39,11 @@
         <label>Personas permitidas</label>
         <input type="number" class="form-control" name="numHabitantes"><br>
         <label>Precio</label>
-        <input type="number" class="form-control" min="800" max="5000" name="precio">
+        <input type="number" class="form-control" min="800" max="5000" name="precio"> <br>
         <input class="form-check-input" type="checkbox" class="form-control" name="estatus">
-        <label class="form-check-label">Disponible</label><br>
+        <label class="form-check-label">Disponible</label> <br><br>
         <input class="form-check-input" type="checkbox" class="form-control" name="amueblado">
-        <label class="form-check-label">Amueblado</label></br>
+        <label class="form-check-label">Amueblado</label></br><br>
         <label for="">Tipo de propiedad: </label>
         <select class="input is-large" name="tipoPropiedad" id="">
             <option value="Casa">Casa</option>
@@ -49,9 +51,9 @@
             <option value="Pensión">Pensión</option>
             <option value="Departamento">Departamento</option>
         </select><br>
-        <div class="d-grid gap-2 col-6 mx-auto">
-            <button class="btn btn-primary" type="submit">ENVIAR</button>
+        <div class="d-grid gap-1 col-2 mx-auto">
+            <button class="btn btn-danger" type="submit">ENVIAR</button>
         </div>
-    
+
     </form>
 </div>

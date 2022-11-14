@@ -11,9 +11,9 @@ class ArrendatarioC extends CI_Controller
 }
 
 
-public function editarPerfil($IdArrendatario){
+public function editarPerfil($idArrendatario){
     $this->load->model('ArrendatarioM');
-    $data ['arrendatarios'] = $this->ArrendatarioM->getArrendatarios($IdArrendatario);
+    $data ['arrendatarios'] = $this->ArrendatarioM->getArrendatarios($idArrendatario);
                 $this->load->view('headers/head.php');
                 $this->load->view('headers/menu.php');
                 $this->load->view('vistaPropiedades/editarPerfil.php', $data);
