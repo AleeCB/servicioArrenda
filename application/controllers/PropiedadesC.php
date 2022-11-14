@@ -25,9 +25,9 @@ class PropiedadesC extends CI_Controller
         }
 
 
-    public function editarPropiedad($idPropiedad){
+    public function editarPropiedad($IdPropiedad){
         $this->load->model('PropiedadesM');
-        $data ['propiedades'] = $this->PropiedadesM->getPropiedades($idPropiedad);
+        $data ['propiedades'] = $this->PropiedadesM->getPropiedades($IdPropiedad);
 
           $this->load->helper(array('form', 'url'));
             
@@ -99,8 +99,4 @@ class PropiedadesC extends CI_Controller
         $this->load->view('headers/footer.php');
     }
 
-<<<<<<< HEAD
 }?>
-=======
-}?>
->>>>>>> 43ce9365449030caa1fa298e37d1f27e90f08a7f
