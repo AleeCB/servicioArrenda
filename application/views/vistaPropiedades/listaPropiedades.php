@@ -24,10 +24,40 @@
                 <td><?=$key->amueblado?></td>
                 <td><?=$key->tipoPropiedad?></td>
                 <td><?=$key->fotoPrincipal?></td>
-                <td><a class="btn btn-info btn-sm"
-                        href="<?=base_url('index.php/PropiedadesC/editarPropiedad/').$key->idPropiedad?>">EDITAR</a>
-                    <a class="btn btn-danger btn-sm"
-                        href="<?=base_url('index.php/PropiedadesC/eliminarPropiedad/').$key->idPropiedad?>">ELIMINAR</a>
+                <td>
+                    <!-- Button trigger modal -->
+                    <div class="d-grid gap-2 col-6 mx-auto">
+                        <p class="text-center"><button type="button" class="btn btn-info"
+                                class="d-grid gap-1 d-md-block col-1 mx-auto" data-bs-toggle="modal"
+                                data-bs-target="#staticBackdrop">
+                                EDITAR
+                            </button>
+                        </p>
+                        <!-- Modal -->
+                        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false"
+                            tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h1 class="modal-title fs-5" id="staticBackdropLabel">EDITAR PROPIEDAD</h1>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="container">
+                                            <p>Nombre de la propiedad :<?=$propiedades[0]->nombre?></p>
+                                            <p>Ubicacion: <?=$propiedades[0]->ubicacion?></p>
+                                            <p>Número de habitantes: <?=$propiedades[0]->numHabitantes?></p>
+                                            <p>Precio: <?=$propiedades[0]->precio?></p>
+                                            <p>Estatus: <?=$propiedades[0]->estatus?></p>
+                                            <p>Amueblado: <?=$propiedades[0]->amueblado?></p>
+                                            <p>Tipo de propiedad: <?=$propiedades[0]->tipoPropiedad?></p>
+                                            <p>Foto principal: <?=$propiedades[0]->fotoPrincipal?></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                 </td>
             </tr>
             <?php endforeach ?>
@@ -35,42 +65,17 @@
         </thead>
     </table>
     <!-- Button trigger modal -->
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-    <div class="d-grid gap-2 col-6 mx-auto">
-=======
-<<<<<<< HEAD
->>>>>>> e41d65d25bddf01b19d2c334a403fc2073dfa839
-    <div class="d-grid gap-2 col-6 mx-auto" >
-=======
-    <<<<<<< HEAD <div class="d-grid gap-2 col-6 mx-auto">
->>>>>>> 49dff0354aafd2cfc348a857cea21d56527d953c
->>>>>>> 9242a61458c590f67e948ff670e44699ceda415b
-        <button type="button" class="btn btn-primary" class="d-grid gap-2 d-md-block col-6 mx-auto"
-            data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-            AGREGAR PROPIEDAD
-        </button>
-<<<<<<< HEAD
-    </div>
-=======
-<<<<<<< HEAD
->>>>>>> e41d65d25bddf01b19d2c334a403fc2073dfa839
 
-=======
-<<<<<<< HEAD
-    </div>
-=======
-        =======
->>>>>>> 9242a61458c590f67e948ff670e44699ceda415b
+    <div class="d-grid gap-2 col-6 mx-auto">
         <div class="d-grid gap-2 col-6 mx-auto">
-            <p class="text-center"><button type="button" class="btn btn-success"
-                    class="d-grid gap-1 d-md-block col-1 mx-auto" data-bs-toggle="modal"
-                    data-bs-target="#staticBackdrop">
-                    AGREGAR PROPIEDAD </p>
-            </button> </p>
+
+            <div class="d-grid gap-2 col-6 mx-auto">
+                <button type="button" class="btn btn-primary" class="d-grid gap-2 d-md-block col-6 mx-auto"
+                    data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                    AGREGAR PROPIEDAD
+                </button>
+            </div>
         </div>
->>>>>>> 49dff0354aafd2cfc348a857cea21d56527d953c
 
         <!-- Modal -->
         <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
@@ -83,7 +88,7 @@
                     </div>
                     <div class="modal-body">
                         <div class="container">
-                            <form action="<?=base_url('index.php/PropiedadesC/InsertarPropiedad')?>" method="POST">
+                            <form action="<?=base_url('index.php/PropiedadesC/insertarPropiedad')?>" method="POST">
                                 <div class="container">
                                     <div class="row">
                                         <div class="col-1">
