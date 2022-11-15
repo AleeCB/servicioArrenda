@@ -33,17 +33,18 @@
     </div>
     </a>
     <div>
+        <!-- Botón para lo del perfil -->
         <div class="btn-group">
             <button type="button" class="btn btn-danger dropdown-toggle" data-bs-toggle="dropdown"
                 aria-expanded="false">
                 Pedro
             </button>
             <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Perfil</a></li>
+                <li><a class="dropdown-item" href="#">Cerrar sesión</a></li>
                 <li>
-                    <a class="dropdown-item" href=" <?=base_url('index.php/ArrendatarioC/editarPerfil/')?>">Perfil
-                    </a>
+                    <hr class="dropdown-divider">
                 </li>
-                <a class="dropdown-item" href=" <?=base_url('index.php/PrincipalC/major/')?>">Cerrar sesión
             </ul>
         </div>
     </div>

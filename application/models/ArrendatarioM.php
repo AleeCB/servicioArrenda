@@ -7,7 +7,7 @@
         return $query->result();
     }
 
-    function editarPropiedad($idArrendatario){
+    function editarPerfil($IdArrendatario){
         $data = array(
             'Fecha de nacimiento' => $this->input->post('fechaNacimiento'),
             'Correo electrónico' => $this->input->post('correo'),
@@ -16,7 +16,7 @@
             'Foto' => $this->input->post('foto'),
     );
     
-    $this->db->where('IdArrendatario', $idArrendatario);
+    $this->db->where('IdArrendatario', $IdArrendatario);
     $this->db->update('arrendatario', $data);
     }
 

@@ -3,6 +3,7 @@
         <div class="alert alert-primary" role="alert">
             <h1 class="text-center">Mis propiedades</h1>
         </div>
+
         <thead class="table" style="background-color: #09506C">
             <th class="text-white text-center">Id</th>
             <th class="text-white text-center">Nombre de la propiedad</th>
@@ -27,6 +28,7 @@
                 <td><?=$key->amueblado?></td>
                 <td><?=$key->tipoPropiedad?></td>
                 <td><?=$key->fotoPrincipal?></td>
+<<<<<<< HEAD
                 <td> 
 <<<<<<< HEAD
 =======
@@ -77,19 +79,30 @@
                     </a>
 >>>>>>> 43ce9365449030caa1fa298e37d1f27e90f08a7f
 >>>>>>> 35b094692fa6ff190621fe6fe33dd573f9d2bb94
+=======
+                <td>
+
+                    <a class="btn btn-success" href="<?=base_url('index.php/PropiedadesC/editarPropiedad/')?>"
+                        type="button">EDITAR
+                    </a>
+>>>>>>> 89eccdf69e87d30ded1b49f5d3d4d496046b3413
                 </td>
             </tr>
             <?php endforeach ?>
         </tbody>
     </table>
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
+=======
+>>>>>>> 89eccdf69e87d30ded1b49f5d3d4d496046b3413
     <div class="d-grid gap-1 col-2 mx-auto">
         <a class="btn btn-success" href="<?=base_url('index.php/PropiedadesC/insertarPropiedad/')?>"
             type="button">AGREGAR PROPIEDAD
         </a>
     </div>
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> 35b094692fa6ff190621fe6fe33dd573f9d2bb94
@@ -195,3 +208,6 @@
             </div>
         </div>
     </div>->
+=======
+</div>
+>>>>>>> 89eccdf69e87d30ded1b49f5d3d4d496046b3413
