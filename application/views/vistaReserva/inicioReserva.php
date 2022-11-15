@@ -12,13 +12,55 @@
 <body>
 
     <style>
-        body{
-                background-color: #99D9EA;
-        }
-        hr{
-            height: 3px;
-            background-color: black;
-        }
+    body {
+        background-color: #99D9EA;
+    }
+
+    hr {
+        height: 3px;
+        background-color: black;
+    }
+
+    #form {
+  width: 250px;
+  margin: 0 auto;
+  height: 50px;
+}
+
+#form p {
+  text-align: center;
+}
+
+#form label {
+  font-size: 20px;
+
+}
+
+input[type="radio"] {
+  display: none;
+  
+}
+
+label {
+  color: grey;
+   
+}
+
+.clasificacion {
+  direction: rtl;
+  unicode-bidi: bidi-override;
+}
+
+label:hover,
+label:hover ~ label {
+  color: orange;
+  
+}
+
+input[type="radio"]:checked ~ label {
+  color: orange;
+  
+}
     </style>
     <div class="row">
         <div class="col-4">
@@ -91,89 +133,94 @@
                 </h3>
             </div>
             <div class="col-4">
-            <a class="btn btn-primary btn-lg" href="<?=base_url('index.php/ReservaPrincipalC/insertarReserva/')?>"
-                role="button">Agregar Reserva</a>
-            <a class="btn btn-primary btn-lg" href="<?=base_url('index.php/CalificacionC/show/')?>"
-                role="button">Agregar comentario</a>
+                <a class="btn btn-primary btn-lg" href="<?=base_url('index.php/ReservaPrincipalC/insertarReserva/')?>"
+                    role="button">Agregar Reserva</a>
+                <a class="btn btn-primary btn-lg" href="<?=base_url('index.php/CalificacionC/show/')?>"
+                    role="button">Agregar comentario</a>
+            </div>
         </div>
-    </div>
-    <hr>
-<!-- <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<COMENTARIOS>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> -->
-<div class="linea"></div>
-<div class="container">
-    <h1 class="text-left">COMENTARIOS</h1><br></br>
+        <hr>
+        <!-- <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<COMENTARIOS>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> -->
+        <div class="linea"></div>
+        <div class="container">
+            <h1 class="text-left">COMENTARIOS</h1><br></br>
 
-    <div class="row">
-
-        <div class="col-6">
             <div class="row">
-                <div class="col-1">
-                    <img src="https://cdn-icons-png.flaticon.com/512/1946/1946429.png" alt="" width="30px" height="30px">
+
+                <div class="col-6">
+                    <div class="row">
+                        <div class="col-1">
+                            <img src="https://cdn-icons-png.flaticon.com/512/1946/1946429.png" alt="" width="30px"
+                                height="30px">
+                        </div>
+                        <div class="col-1">
+
+                            <h4>HANNA</h4>
+                        </div>
+                        <p>LA NETA EL LUGAR ESTA BIEN CULERO JAJJA PERO NI MODO </p>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-1">
+                            <img src="https://cdn-icons-png.flaticon.com/512/1946/1946429.png" alt="" width="30px"
+                                height="30px">
+                        </div>
+                        <div class="col-1">
+
+                            <h4>LEONARDO</h4>
+                        </div>
+                        <p>VIVA MEXICO CABRONES JSJS</p>
+                    </div>
+
+                    <form>
+  <p class="clasificacion">
+    <input id="radio1" type="radio" name="estrellas" value="5"><!--
+    --><label for="radio1">★</label><!--
+    --><input id="radio2" type="radio" name="estrellas" value="4"><!--
+    --><label for="radio2">★</label><!--
+    --><input id="radio3" type="radio" name="estrellas" value="3"><!--
+    --><label for="radio3">★</label><!--
+    --><input id="radio4" type="radio" name="estrellas" value="2"><!--
+    --><label for="radio4">★</label><!--
+    --><input id="radio5" type="radio" name="estrellas" value="1"><!--
+    --><label for="radio5">★</label>
+  </p>
+</form>
+
+
+
                 </div>
             </div>
-
-            <h4> Califica según tu vivencia (Obligatorio) </h4><br>
-            <label>Limpieza <input type="checkbox" value="val" name="name"></label>
-            <label><input type="checkbox" value="val" name="name2"></label>
-            <label><input type="checkbox" value="val" name="name3"></label>
-            <label><input type="checkbox" value="val" name="name3"></label>
-            <label><input type="checkbox" value="val" name="name3"></label>
-            <label><input type="checkbox" value="val" name="name3"></label></br>
-
-
-
-            <label>Comunicacion<input type="checkbox" value="val" name="name"></label>
-            <label><input type="checkbox" value="val" name="name2"></label>
-            <label><input type="checkbox" value="val" name="name3"></label>
-            <label><input type="checkbox" value="val" name="name3"></label>
-            <label><input type="checkbox" value="val" name="name3"></label>
-            <label><input type="checkbox" value="val" name="name3"></label></br>
-
-            <label>Ubicacion <input type="checkbox" value="val" name="name"></label>
-            <label><input type="checkbox" value="val" name="name2"></label>
-            <label><input type="checkbox" value="val" name="name3"></label>
-            <label><input type="checkbox" value="val" name="name3"></label>
-            <label><input type="checkbox" value="val" name="name3"></label>
-            <label><input type="checkbox" value="val" name="name3"></label></br>
-
-            <label>Calidad-Precio <input type="checkbox" value="val" name="name"></label>
-            <label><input type="checkbox" value="val" name="name2"></label>
-            <label><input type="checkbox" value="val" name="name3"></label>
-            <label><input type="checkbox" value="val" name="name3"></label>
-            <label><input type="checkbox" value="val" name="name3"></label>
-            <label><input type="checkbox" value="val" name="name3"></label></br>
-
-            <label>Veracidad <input type="checkbox" value="val" name="name"></label>
-            <label><input type="checkbox" value="val" name="name2"></label>
-            <label><input type="checkbox" value="val" name="name3"></label>
-            <label><input type="checkbox" value="val" name="name3"></label>
-            <label><input type="checkbox" value="val" name="name3"></label>
-            <label><input type="checkbox" value="val" name="name3"></label></br>
-
-
-            <h4> ¿Recomendarias a este lugar? </h4>
-
-            <div class="form-check form-check-inline">
-                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1"
-                    value="option1">
-                <label class="form-check-label" for="inlineRadio1"></label>
-            </div>
-            <div class="form-check form-check-inline">
-                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2"
-                    value="option2">
-                <label class="form-check-label" for="inlineRadio2"></label>
-            </div></br>
-
-            <input type="submit" value="Enviar" class="btn btn-primary">
         </div>
-    </div>
-</div>
+        <hr class="xd">
+        <div class="container">
+            <div class="row">
+                <div class="col-1">
+                    <img src="https://cdn-icons-png.flaticon.com/512/64/64572.png" alt="" width="60px" height="60px">
+                </div>
+                <div class="col-1">
 
-    <!-- <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<VENTANA RESERVA>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> -->
+                    <h2>ARRENDADOR</h2>
+                </div>
+                <p>Juanita la Huerfanita</p>
+                <div class="col-1">
+
+                    <p>Idioma: Español <br>
+                        Indice de respuesta: 100%
+                        Tiempo de respuestas: 3hrs
+
+
+                    </p>
+                </div>
+                <a class="btn btn-primary btn-lg" href="<?=base_url('index.php/CalificacionC/show/')?>"
+                    role="button">Más Información</a>
+            </div>
+        </div>
+        <!-- <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<VENTANA RESERVA>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> -->
 
 
 
-    <!-- Modal
+        <!-- Modal
 <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
             aria-labelledby="staticBackdropLabel" aria-hidden="true">
             <div class="modal-dialog">
@@ -220,7 +267,7 @@
 
 </html>-->
 
-    <!-- <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<PIE DE PÁGINA>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> -->
+        <!-- <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<PIE DE PÁGINA>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> -->
 
 
 
@@ -250,53 +297,53 @@
 
 
 
-    <div>
-        <footer class="bd-footer">
-            <div class="pt-3 pb-3" style="background:#A6A6A6">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg text-white d-flex align-items-center">
-                            <img class=" d-none d-lg-block"
-                                src="https://dewey.tailorbrands.com/production/brand_version_mockup_image/281/7826038281_05bdbfb5-ba7b-4213-9e02-3488afd0c93c.png?cb=1667763509"
-                                alt="" />
-                        </div>
-                        <div class="col-lg text-white">
-                            <div class="pt-2 pb-2">
-                                <strong>Acerca del Foreigner´s Site</strong>
+        <div>
+            <footer class="bd-footer">
+                <div class="pt-3 pb-3" style="background:#A6A6A6">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg text-white d-flex align-items-center">
+                                <img class=" d-none d-lg-block"
+                                    src="https://dewey.tailorbrands.com/production/brand_version_mockup_image/281/7826038281_05bdbfb5-ba7b-4213-9e02-3488afd0c93c.png?cb=1667763509"
+                                    alt="" />
                             </div>
-                            <p>Quiénes somos</p>
-                            <p>Marco normativo</p>
-                            <p>Transparencia</p>
-                            <p>Desarrolladores</p>
-                        </div>
-                        <div class="col-lg text-white">
-                            <div class="pt-2 pb-2">
-                                <strong>Contacto</strong>
+                            <div class="col-lg text-white">
+                                <div class="pt-2 pb-2">
+                                    <strong>Acerca del Foreigner´s Site</strong>
+                                </div>
+                                <p>Quiénes somos</p>
+                                <p>Marco normativo</p>
+                                <p>Transparencia</p>
+                                <p>Desarrolladores</p>
                             </div>
-                            <p>231 564 52 41</p>
-                            <p>Chat</p>
-                            <p>atencion.usuarios@siteF.com</p>
-                            <p>Solicitud de información</p>
+                            <div class="col-lg text-white">
+                                <div class="pt-2 pb-2">
+                                    <strong>Contacto</strong>
+                                </div>
+                                <p>231 564 52 41</p>
+                                <p>Chat</p>
+                                <p>atencion.usuarios@siteF.com</p>
+                                <p>Solicitud de información</p>
 
-                            <div class="mt-3 mb-3">
+                                <div class="mt-3 mb-3">
+
+                                </div>
+                            </div>
+                            <div class="col-lg text-white">
+                                <div class="pt-2 pb-2">
+                                    <strong>Sitios de interés</strong>
+                                </div>
+                                <a class="text-white d-block" target="_blank" href="https://teziutlan.tecnm.mx/"><img
+                                        src="https://teziutlan.tecnm.mx/wp-content/uploads/2019/03/itst_footer_logo.png"
+                                        width="130" height="40"></a>
 
                             </div>
-                        </div>
-                        <div class="col-lg text-white">
-                            <div class="pt-2 pb-2">
-                                <strong>Sitios de interés</strong>
-                            </div>
-                            <a class="text-white d-block" target="_blank" href="https://teziutlan.tecnm.mx/"><img
-                                    src="https://teziutlan.tecnm.mx/wp-content/uploads/2019/03/itst_footer_logo.png"
-                                    width="130" height="40"></a>
-
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="text-center  pt-3 pb-3"> Derechos reservados © Comhar <p style="color: blue; "> Privacidad y
-                    Condiciones
-                </p>
+                <div class="text-center  pt-3 pb-3"> Derechos reservados © Comhar <p style="color: blue; "> Privacidad y
+                        Condiciones
+                    </p>
 
-            </div>
-    </div>
+                </div>
+        </div>
