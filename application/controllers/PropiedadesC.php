@@ -28,7 +28,6 @@ class PropiedadesC extends CI_Controller
     public function editarPropiedad($IdPropiedad){
         $this->load->model('PropiedadesM');
         $data ['propiedades'] = $this->PropiedadesM->getPropiedades($IdPropiedad);
-
           $this->load->helper(array('form', 'url'));
             
                 $this->load->library('form_validation');
@@ -43,7 +42,7 @@ class PropiedadesC extends CI_Controller
                 }
                 else
                 {
-                        $this->PropiedadesM->editarPropiedad($idPropiedad);
+                        $this->PropiedadesM->editarPropiedad($IdPropiedad);
                         redirect(base_url('index.php/PropiedadesC/show'), 'refresh');
 
                 }

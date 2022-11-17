@@ -29,9 +29,12 @@
                 <td><?=$key->tipoPropiedad?></td>
                 <td><?=$key->fotoPrincipal?></td>
                 <td>
+                    <a class="btn btn-success"
+                        href="<?=base_url('index.php/PropiedadesC/editarPropiedad/').$key->idPropiedad?>">EDITAR
+                    </a>
 
-                    <a class="btn btn-success" href="<?=base_url('index.php/PropiedadesC/editarPropiedad/')?>"
-                        type="button">EDITAR
+                    <a class="btn btn-danger"
+                        href="<?=base_url('index.php/PropiedadesC/deletePropiedad/').$key->idPropiedad?>">ELIMINAR
                     </a>
                 </td>
             </tr>
@@ -39,7 +42,7 @@
         </tbody>
     </table>
     <div class="d-grid gap-1 col-2 mx-auto">
-        <a class="btn btn-success" href="<?=base_url('index.php/PropiedadesC/insertarPropiedad/')?>"
+        <a class="btn btn-success" href="<?=base_url('index.php/PropiedadesC/insertarPropiedad/').$key->idPropiedad?>"
             type="button">AGREGAR PROPIEDAD
         </a>
     </div>
