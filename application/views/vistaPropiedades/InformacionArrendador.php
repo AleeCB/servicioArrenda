@@ -1,6 +1,6 @@
 <style type="text/css">
 .imagen {
-    margin-top: 0px;
+    margin-top: .5px;
     padding-top: 20px;
     padding-left: 20px;
     padding-right: 20px;
@@ -59,7 +59,7 @@
                 <img src="https://cdn-icons-png.flaticon.com/128/4692/4692911.png" class="rounded" alt="..." width="50"
                     height="50">
                 <img src="https://cdn-icons-png.flaticon.com/128/4692/4692913.png" class="rounded" lt="..." width="50"
-                    height="50"><br></br><br></br>
+                    height="50"><br></br>
 
                 <h4 class="text-center">Alma Lilia Martínez Landero cuenta con las siguientes verificaciones:</h4></br>
             </div>
