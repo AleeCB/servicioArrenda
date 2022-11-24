@@ -28,14 +28,10 @@
                 <td><?=$key->amueblado?></td>
                 <td><?=$key->tipoPropiedad?></td>
                 <td><?=$key->fotoPrincipal?></td>
-                <td>
-                    <a class="btn btn-success"
-                        href="<?=base_url('index.php/PropiedadesC/editarPropiedad/').$key->idPropiedad?>">EDITAR
-                    </a>
-
-                    <a class="btn btn-danger"
-                        href="<?=base_url('index.php/PropiedadesC/deletePropiedad/').$key->idPropiedad?>">ELIMINAR
-                    </a>
+                <td><a class="btn btn-success btn-sm"
+                        href="<?=base_url('index.php/PropiedadesC/editarPropiedad/').$key->idPropiedad?>">EDITAR</a>
+                    <a class="btn btn-danger btn-sm"
+                        href="<?=base_url('index.php/PropiedadesC/eliminarPropiedad/').$key->idPropiedad?>">ELIMINAR</a>
                 </td>
             </tr>
             <?php endforeach ?>
