@@ -15,7 +15,11 @@ class PropiedadesC extends CI_Controller
                 {
                     $this->load->view('headers/head.php');
                     $this->load->view('headers/menu.php');
+<<<<<<< HEAD
                     $this->load->view('vistaPropiedades/listaPropiedad.php', $data);
+=======
+                    $this->load->view('vistaReservas/insertarReserva.php', $data);
+>>>>>>> main
                     $this->load->view('headers/footer.php');  
                 }
                 else
