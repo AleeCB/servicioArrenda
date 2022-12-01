@@ -1,4 +1,4 @@
-<div class="container"> 
+<div class="container">
     <h1>NUEVA PROPIEDAD</h1>
     <?php echo validation_errors(); ?>
     <form action="<?=base_url('index.php/PropiedadesC/insertarPropiedad')?>" method="POST">
@@ -6,7 +6,8 @@
             <div class="row">
                 <div class="col-1">
                 </div>
-                <div class="col-2">
+                <input type="hidden" name="idArrendador" value="<?$this->session->userdata('idArrendador')?>">
+                <div class=" col-2">
                     <input type="file" class="form-control" class="w-10 p-3" name="fotoPrincipal">
                     <label>Foto principal</label>
                 </div>
@@ -52,6 +53,5 @@
         <div class="d-grid gap-2 col-6 mx-auto">
             <button class="btn btn-primary" type="submit">ENVIAR</button>
         </div>
-    
     </form>
 </div>

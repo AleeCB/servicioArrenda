@@ -151,8 +151,8 @@
                 </div>
                 <div class="modal-body" style="background-color: #31AFB4;">
                     <div class="container">
-                    <?php echo validation_errors(); ?>
-		             <!-- <?php echo form_open_multipart('ArrendatarioC/insertImagen');?> -->
+                        <?php echo validation_errors(); ?>
+                        <!-- <?php echo form_open_multipart('ArrendatarioC/insertImagen');?> -->
                         <form action="<?=base_url('index.php/ArrendatarioC/InsertArrendatario')?>" method="POST">
 
                             <br> <br>
@@ -175,20 +175,20 @@
                                 <label>fecha de nacimiento :</label>
                                 <input type="DATE" class="form-control" name="fechaNacimiento"><br>
                                 <label>Credencial de estudiante:</label>
-                                <input type="file" class="form-control" class="w-10 p-3" name="credencialEstudiante"><br>
+                                <input type="file" class="form-control" class="w-10 p-3"
+                                    name="credencialEstudiante"><br>
                                 <label>correo:</label>
                                 <input type="text" class="form-control" min="800" max="5000" name="correo"><br>
                                 <label>contraseña:</label>
                                 <input type="text" class="form-control" min="800" max="5000" name="contrasenia"> <br>
 
                             </div>
-                            
+
                             <div class="modal-footer">
                                 <div class="d-grid gap-2 col-6 mx-auto">
                                     <button class="btn btn-primary" type="submit">Registrarme</button>
                                 </div>
                             </div>
-
                         </form>
                     </div>
                 </div>
@@ -217,7 +217,8 @@
 
 
                             <div class="container">
-                                <label>Nombre:</label><input type="text" class="form-control" name="nombre" class="w-10 p-3">
+                                <label>Nombre:</label><input type="text" class="form-control" name="nombre"
+                                    class="w-10 p-3">
                                 <label>Apellido paterno:</label>
                                 <input type="text" class="form-control" name="apellidoP">
                                 <label>Apellido materno:</label>
@@ -227,13 +228,13 @@
                                 <label>contraseña:</label>
                                 <input type="text" class="form-control" min="800" max="5000" name="contrasenia2">
 
-                                
+
                                 <label>fecha de nacimiento:</label>
                                 <input type="DATE" class="form-control" name="fechaNacimiento">
 
 
                                 <label for="">Idioma: </label>
-                                <select class="textfiel valid" name="idioma" >
+                                <select class="textfiel valid" name="idioma">
                                     <option value="Español"> Español</option>
                                     <option value="Inglés">Inglés</option>
                                     <option value="Nahuált">Nahuált</option>
