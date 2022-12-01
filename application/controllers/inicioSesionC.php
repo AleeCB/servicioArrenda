@@ -23,8 +23,8 @@ class inicioSesionC extends CI_Controller
                 $this->load->model('InicioSesionM');
                 $usuario1 = $this->InicioSesionM->validaUsuario($this->input->post('correo'), md5($this->input->post('contrasenia')));
                 $usuario2 = $this->InicioSesionM->validaUsuario2($this->input->post('correo'), md5($this->input->post('contrasenia')));
-                print_r($usuario1);
-                print_r($usuario2);
+                // print_r($usuario1);
+                // print_r($usuario2);
                 //if($usuario[0]->Perfil==1){
                 if(count($usuario1)>0){
                         
@@ -48,7 +48,7 @@ class inicioSesionC extends CI_Controller
                                 );
         
                                 $this->session->set_userdata($newdata);
-                              redirect(base_url('index.php/PrincipalC/major'),'refresh'); 
+                              redirect(base_url('index.php/PropiedadesC/show'),'refresh'); 
                         }   
                 }   
         }

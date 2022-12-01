@@ -36,4 +36,16 @@ class InicioSesionM extends CI_Model
         $query = $this->db->get('arrendatario');
         return $query->result();
     }
+
+	function getArrendadores(){
+        $query = $this->db->get('arrendador');
+        return $query->result();
+    }
+
+
+    function getArrendador($idArrendador){    
+        $this->db->where('idArrendador', $idArrendador);
+        $query = $this->db->get('arrendador');
+        return $query->result();
+    }
 }?>
