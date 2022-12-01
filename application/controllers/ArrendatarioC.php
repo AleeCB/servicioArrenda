@@ -36,7 +36,7 @@ public function major(){
             }  
 
 } 
-
+   
 
 
 public function InsertArrendatario(){

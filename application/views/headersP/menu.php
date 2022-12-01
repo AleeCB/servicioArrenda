@@ -152,7 +152,7 @@
                     <?php echo validation_errors(); ?>
 		             <!-- <?php echo form_open_multipart('ArrendatarioC/insertImagen');?> -->
                         <form action="<?=base_url('index.php/ArrendatarioC/InsertArrendatario')?>" method="POST">
-
+   
                             <br> <br>
 
                             <h3 class="text-center">Regístrate como Estudiante</h3>
