@@ -3,6 +3,7 @@
 class PropiedadesC extends CI_Controller
 {
     public function show(){
+<<<<<<< HEAD
         $this->load->model('PropiedadesM');
         $data ['propiedades'] = $this->PropiedadesM->getPropiedades();
         $this->load->view('headers/head.php');
@@ -10,6 +11,30 @@ class PropiedadesC extends CI_Controller
         $this->load->view('vistaPropiedades/listaPropiedades', $data);
         $this->load->view('headers/footer.php');
     }
+=======
+        $this->load->model('ReservasM');
+        $data ['reservas'] = $this->ReservaPrincipalM->getReservas();
+
+          $this->load->helper(array('form', 'url'));
+        
+                $this->load->library('form_validation');
+
+                $this->form_validation->set_rules('servicio', 'servicio', 'required');
+                if ($this->form_validation->run() == FALSE)
+                {
+                    $this->load->view('headers/head.php');
+                    $this->load->view('headers/menu.php');
+                    $this->load->view('vistaReservas/insertarReserva.php', $data);
+                    $this->load->view('headers/footer.php');  
+                }
+                else
+                {
+                        $this->load->view('formsuccess');
+                }
+        }
+
+    
+>>>>>>> main
 
     public function editarPropiedad($idPropiedad){
         $this->load->model('PropiedadesM');
