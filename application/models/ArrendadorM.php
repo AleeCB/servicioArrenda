@@ -14,8 +14,8 @@
         return $query->result();
     }
 
-    function InsertArrendador(){  
-        $data = array(  
+    function InsertArrendador(){
+        $data = array(
        'nombre' => $this->input->post('nombre'),
        'apellidoP' => $this->input->post('apellidoP'),
        'apellidoM' =>$this->input->post('apellidoM'),
