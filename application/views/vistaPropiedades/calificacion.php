@@ -1,10 +1,13 @@
-</style>
 <div class="container">
     <h1 class="text-center">¡Compartenos tu experiencia!</h1><br></br>
 
     <div class="row">
 
+
+
+
         <div class="col-6">
+
             <h4 class="text-center">¿Como describirias tu experiencia de haber rentado este lugar? (Obligatorio) </h4>
             <p><textarea name="comentario" rows="6" cols="55"> </textarea></p>
 
@@ -96,15 +99,18 @@
                     src="https://cf.bstatic.com/xdata/images/hotel/max1280x900/273386604.jpg?k=dcb5f50f028059ac93420280d47f75bc3b16a46ca0e4b83abb68728239c376d2&o=&hp=1"
                     alt="" width="500" height="550">
             </div><br>
-            <input type="button" value="Enviar">
-
+            <a><input type="button" value="Enviar" href="<?=base_url('index.php/ReservaPrincipalC/show')?>"></a>
         </div>
     </div>
 
-    <body style="background-color:#EBF5FB;">
+    <body style="background-color:#F7F9F9 ;">
     </body>
-</div>
 
+
+
+
+
+</div>
 
 
 
