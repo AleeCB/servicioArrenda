@@ -4,23 +4,7 @@
         <div class="col-4">
             <hr style="color: gray; background-color: black; width:100%;" />
         </div>
-
-
         <div class="col-4">
-
-
-        <form class="d-flex" role="search">
-                <input class="form-control me-2 is-rounded is-responsive" type="search" placeholder="Buscar"
-                    aria-label="Search" style="color: black; width:80%"><button class="btn btn-outline text-white"
-                    style="background-color: #155772;" type="submit"><svg xmlns="http://www.w3.org/2000/svg" width="16"
-                        height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
-                        <path
-                            d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
-                    </svg></button>
-            </form>
-
-        <!-- funcion para ocultar cosas
-        <?php if($this->session->userdata('Logeado')==TRUE) : ?>
             <form class="d-flex" role="search">
                 <input class="form-control me-2 is-rounded is-responsive" type="search" placeholder="Buscar"
                     aria-label="Search" style="color: black; width:80%"><button class="btn btn-outline text-white"
@@ -30,10 +14,7 @@
                             d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
                     </svg></button>
             </form>
-        <?php endif ?> -->
-
         </div>
-
         <div class="col-4">
             <hr style="color: gray; background-color: black; width:100%;" />
         </div>
@@ -77,16 +58,7 @@
             <h2 class="h4">Quíza te agraden ...</h2>
 
         </div>
-        <!-- <div class="row m-0">
-            <div id="carouselInteres" class="carousel carousel-dark slide" data-bs-touch="false"
-                data-bs-interval="false">
-
-                <div class="carousel-inner">
-
-
-                </div>
-            </div>
-        </div> -->
+       
 
 
 </body>

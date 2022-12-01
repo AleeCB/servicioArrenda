@@ -13,10 +13,10 @@ class ReservaPrincipalC extends CI_Controller
                 $this->form_validation->set_rules('servicio', 'servicio', 'required');
                 if ($this->form_validation->run() == FALSE)
                 {
-                    $this->load->view('headers/head.php');
-                    $this->load->view('headers/menu.php');
-                    $this->load->view('vistaReserva/inicioReserva.php', $data);
-                    $this->load->view('headers/footer.php');
+                    $this->load->view('headersArrendatario/head.php');
+                    $this->load->view('headersArrendatario/menu.php');
+                    $this->load->view('vistaArrendatario/inicioReserva.php', $data);
+                    $this->load->view('headersArrendatario/footer.php');
                 }
                 else
                 {

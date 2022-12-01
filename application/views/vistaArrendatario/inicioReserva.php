@@ -1,5 +1,5 @@
 <main>
-<body><br><br><br>
+<body>
     <div class="row" style="background-color: white">
         <div class="col-4">
             <hr style="color: gray; background-color: black; width:100%;" />

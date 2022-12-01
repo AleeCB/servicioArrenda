@@ -3,6 +3,12 @@
 class PrincipalC extends CI_Controller
 {
     public function major(){
+        print_r($this->session->userdata());
+
+       echo  $this->session->userdata('Logeado');
+       echo $this->session->userdata('correo');
+
+
         $this->load->model('PrincipalM');
         $data ['propiedades'] = $this->PrincipalM->getPropiedades();
 
@@ -26,5 +32,10 @@ class PrincipalC extends CI_Controller
     } 
 
     
+    public function getPropiedad($IdPropiedad){
+        $this->load->view('headersP/head.php');
+        $this->load->view('headersP/menu.php');
+        $this->load->view('headersP/footer.php');
+    }
 
 } ?>
