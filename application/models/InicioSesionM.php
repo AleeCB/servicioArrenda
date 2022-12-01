@@ -23,7 +23,7 @@ class InicioSesionM extends CI_Model
 
 
 
-
+ 
 
 	function getArrendatarios(){
         $query = $this->db->get('arrendatario');

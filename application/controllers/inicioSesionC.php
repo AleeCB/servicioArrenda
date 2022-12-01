@@ -17,7 +17,7 @@ class inicioSesionC extends CI_Controller
 				$this->load->view('vistaPrincipal/login');
         }
         else
-        {
+        { 
 
                 
                 $this->load->model('InicioSesionM');

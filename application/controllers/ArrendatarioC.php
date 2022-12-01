@@ -29,11 +29,11 @@ public function major(){
                 $this->load->view('headersArrendatario/menu.php');
                 $this->load->view('vistaArrendatario/inicioA.php', $data);
                 $this->load->view('headersArrendatario/footer.php');
-            }
+            } 
             else
             {
                     $this->load->view('formsuccess');
-            }
+            }  
 
 } 
 

@@ -109,9 +109,7 @@ class ArrendadorC extends CI_Controller
                }
               //
        }
-}
-
-
-
+  
+        }
 
 } ?>
