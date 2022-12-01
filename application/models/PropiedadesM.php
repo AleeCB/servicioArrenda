@@ -14,7 +14,6 @@
         return $query->result();
     }
 
-
     function deletePropiedad($IdPropiedad){
         $this->db->where('IdPropiedad', $IdPropiedad);
         $this->db->delete('propiedad');

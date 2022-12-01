@@ -64,7 +64,8 @@
                     </div><br></br >
 
 
-                    <input type="submit" value="Enviar">
+                    <a class="btn btn-primary btn-lg" href="<?=base_url('index.php/ReservaPrincipalC/show/')?>"
+                    role="button">Enviar</a>
         </div>
 
         <div class="col-6">
@@ -73,37 +74,5 @@
                     alt="" width="500" height="550">
             </div><br>
         </div>
-<<<<<<< HEAD
     </div>
 </div>
-=======
-
-
-        <form>
-  <p class="clasificacion">
-    <input id="radio1" type="radio" name="estrellas" value="5"><!--
-    --><label for="radio1">★</label><!--
-    --><input id="radio2" type="radio" name="estrellas" value="4"><!--
-    --><label for="radio2">★</label><!--
-    --><input id="radio3" type="radio" name="estrellas" value="3"><!--
-    --><label for="radio3">★</label><!--
-    --><input id="radio4" type="radio" name="estrellas" value="2"><!--
-    --><label for="radio4">★</label><!--
-    --><input id="radio5" type="radio" name="estrellas" value="1"><!--
-    --><label for="radio5">★</label>
-  </p>
-</form>
-
-
-
-
-
-
-
-
-
-
-
-
-    </div>
->>>>>>> 9a487d00a23e3fdd873fcd97b7eb8de692548142

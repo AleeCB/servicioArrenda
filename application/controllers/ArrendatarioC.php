@@ -22,6 +22,11 @@ class ArrendatarioC extends CI_Controller
                 $this->ArrendatarioM->editarPerfil($IdArrendatario);
                 redirect(base_url('index.php/ArrendatarioC/show'), 'refresh');
 }
+    public function cambiarContra($IdArrendatario){
+        $this->load->model('ArrendatarioM');
+        $data ['arrendatarios'] = $this->ArrendatarioM->getArrendatarios($IdArrendatario);
+            
+    }
 
 }
 ?>

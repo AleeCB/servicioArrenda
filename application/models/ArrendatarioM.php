@@ -20,5 +20,9 @@
     $this->db->update('arrendatario', $data);
     }
 
+    function cambiarContrasenia($IdArrendatario){
+        
+    }
+
 
  } ?>

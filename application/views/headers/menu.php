@@ -43,7 +43,7 @@
                     <a class="dropdown-item" href=" <?=base_url('index.php/ArrendatarioC/editarPerfil/')?>">Perfil
                     </a>
                 </li>
-                <a class="dropdown-item" href=" <?=base_url('index.php/PrincipalC/major/')?>">Cerrar sesión
+                <a class="dropdown-item" href=" <?=base_url('index.php/PrincipalC/major/')?>">Cerrar sesión </a>
             </ul>
         </div>
     </div>

@@ -2,11 +2,11 @@
 
 <nav class="navbar navbar-expand-lg p-0" style="background-color: #FFFFFF;">
     <div class="container-fluid">
-        <a class="navbar-brand">
+        <a class="navbar-brand"></a>
 
             <img src="https://dewey.tailorbrands.com/production/brand_version_mockup_image/281/7826038281_05bdbfb5-ba7b-4213-9e02-3488afd0c93c.png?cb=1667763509"
                 width="220" height="40">
-        </a>
+        
         <form class="d-flex" role="search">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li>
@@ -17,8 +17,8 @@
                 </li>
             </ul>
 
-            <button type="button"class="btn outline-dark" class="d-grid gap-2 d-md-block col-6 mx-auto" data-bs-toggle="modal"
-                        data-bs-target="#iniciar"><svg xmlns="http://www.w3.org/2000/svg" width="35"
+            <button type="button" class="btn outline-dark" class="d-grid gap-2 d-md-block col-6 mx-auto"
+                data-bs-toggle="modal" data-bs-target="#iniciar"><svg xmlns="http://www.w3.org/2000/svg" width="35"
                     height="35" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
                     <title>Iniciar sesión</title>
                     <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
@@ -108,30 +108,31 @@
                                                 <label for="example" class="form-label">Email:</label>
                                             </div>
                                             <div class="col-9">
-                                                <input type="email" name="correo" class="form-control" 
-                                                  id="" ><br>
+                                                <input type="email" name="correo" class="form-control" id=""><br>
                                             </div>
                                         </div>
                                         <div class="row">
                                             <div class="col-3 text-center">
-                                            <label for="example" class="form-label">Contraseña:</label>
+                                                <label for="example" class="form-label">Contraseña:</label>
                                             </div>
                                             <div class="col-9">
-                                            <input type="password" name="contrasenia" class="form-control" 
-                                                  id="" ><br>
+                                                <input type="password" name="contrasenia" class="form-control"
+                                                    id=""><br>
                                             </div>
                                         </div>
 
                                     </div>
                             </div>
                             <div class="modal-footer tex-center">
-                                
-                            <a class="btn btn-outline-secondary text-black"   style=" background-color: white" href="#" role="button">Olvidé mi contraseña</a>
-                                
-                                
-                </a>
-                                    <button class="btn btn-outline-secondary tex-white" style="color: white; " type="submit">ENVIAR</button>
-                                
+
+                                <a class="btn btn-outline-secondary text-black" style=" background-color: white"
+                                    href="#" role="button">Olvidé mi contraseña</a>
+
+
+                                </a>
+                                <button class="btn btn-outline-secondary tex-white" style="color: white; "
+                                    type="submit">ENVIAR</button>
+
                             </div>
         </form>
     </div>

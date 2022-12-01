@@ -7,7 +7,7 @@ class PropiedadesC extends CI_Controller
         $data ['propiedades'] = $this->PropiedadesM->getPropiedades();
 
           $this->load->helper(array('form', 'url'));
-            
+        
                 $this->load->library('form_validation');
 
                 $this->form_validation->set_rules('servicio', 'servicio', 'required');
@@ -15,8 +15,8 @@ class PropiedadesC extends CI_Controller
                 {
                     $this->load->view('headers/head.php');
                     $this->load->view('headers/menu.php');
-                    $this->load->view('vistaPropiedades/listaPropiedades.php', $data);
-                    $this->load->view('headers/footer.php');    
+                    $this->load->view('vistaPropiedades/listaPropiedad.php', $data);
+                    $this->load->view('headers/footer.php');  
                 }
                 else
                 {
@@ -24,38 +24,33 @@ class PropiedadesC extends CI_Controller
                 }
         }
 
+    
 
-    public function editarPropiedad($IdPropiedad){
+    public function editarPropiedad($idPropiedad){
         $this->load->model('PropiedadesM');
-        $data ['propiedades'] = $this->PropiedadesM->getPropiedades($IdPropiedad);
-
-          $this->load->helper(array('form', 'url'));
-            
+        $data ['propiedades'] = $this->PropiedadesM->getPropiedad($idPropiedad);
+        $this->load->helper(array('form', 'url'));
+        
                 $this->load->library('form_validation');
-
                 $this->form_validation->set_rules('nombre', 'nombre', 'required');
                 if ($this->form_validation->run() == FALSE)
                 {
-                    $this->load->view('headers/head.php');
-                    $this->load->view('headers/menu.php');
-                    $this->load->view('vistaPropiedades/editarPropiedad', $data);
-                    $this->load->view('headers/footer.php');
+                        $this->load->view('headers/head.php');
+                        $this->load->view('headers/menu.php');
+                        $this->load->view('headers/footer.php');
+                        $this->load->view('vistaPropiedades/editarPropiedad.php', $data);
                 }
                 else
                 {
                         $this->PropiedadesM->editarPropiedad($idPropiedad);
                         redirect(base_url('index.php/PropiedadesC/show'), 'refresh');
-
                 }
     }
 
 
 
-
-
-
-
     
+
     public function eliminarPropiedad($idPropiedad){
         $this->load->model('PropiedadesM');
         if($this->PropiedadesM->deletePropiedad($idPropiedad)){
@@ -99,8 +94,6 @@ class PropiedadesC extends CI_Controller
         $this->load->view('headers/footer.php');
     }
 
-<<<<<<< HEAD
+
+//prueba
 }?>
-=======
-}?>
->>>>>>> 89eccdf69e87d30ded1b49f5d3d4d496046b3413
