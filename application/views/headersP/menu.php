@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
+<<<<<<< HEAD
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -19,6 +20,27 @@
             <img class="logo-img" src="https://dewey.tailorbrands.com/production/brand_version_mockup_image/742/7947075742_f01d45f9-8f6e-4b54-b12f-ff95d000250b.png?cb=1669146189"
                 width="180" height="32" class="d-inline-block align-text-top">
                    
+=======
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!-- <nav class="navbar navbar-expand-lg bg-prymary" style="background-color: #e3f2fd; "> sticky-top-->
+    <nav class="navbar navbar-expand-lg p-0 sticky-top" style="background-color: #FFFFFF; ">
+        <div class="container-fluid">
+            <a class="navbar-brand">
+
+                <img src="https://dewey.tailorbrands.com/production/brand_version_mockup_image/281/7826038281_05bdbfb5-ba7b-4213-9e02-3488afd0c93c.png?cb=1667763509"
+                    width="220" height="40">
+>>>>>>> main
             </a>
 
             <!-- <form class="d-flex" role="search">
@@ -40,13 +62,22 @@
                         d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z" />
                 </svg></button> -->
             <form class="d-flex" role="search">
+<<<<<<< HEAD
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
                     <li class="text-center">
+=======
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li>
+>>>>>>> main
 
                         <!-- <a class="btn btn-outline text-black btn-lg" style="background-color: #FFFFFF;" href="<?=base_url('index.php/InicioSesionC/login/')?>"
                     role="button"><h5><?=$this->session->userdata('correo') ?>   Regístrate</h5></a> -->
 
+<<<<<<< HEAD
                         <button type="button" class="btn btn-outline text-white" style="background-color: #155772;"
+=======
+                        <button type="button" class="btn btn-outline text-black  " style="background-color: #FFFFFF;"
+>>>>>>> main
                             class="d-grid gap-2 d-md-block col-6 mx-auto" data-bs-toggle="modal"
                             data-bs-target="#registro">
                             <h5>Regístrate</h5>
@@ -54,7 +85,11 @@
                     </li>
                 </ul>
 
+<<<<<<< HEAD
                 <button type="button" class="btn outline-dark text-white" class="d-grid gap-2 d-md-block col-6 mx-auto"
+=======
+                <button type="button" class="btn outline-dark" class="d-grid gap-2 d-md-block col-6 mx-auto"
+>>>>>>> main
                     data-bs-toggle="modal" data-bs-target="#iniciar"><svg xmlns="http://www.w3.org/2000/svg" width="35"
                         height="35" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
                         <title>Iniciar sesión</title>
@@ -154,7 +189,11 @@
                     <?php echo validation_errors(); ?>
 		             <!-- <?php echo form_open_multipart('ArrendatarioC/insertImagen');?> -->
                         <form action="<?=base_url('index.php/ArrendatarioC/InsertArrendatario')?>" method="POST">
+<<<<<<< HEAD
    
+=======
+
+>>>>>>> main
                             <br> <br>
 
                             <h3 class="text-center">Regístrate como Estudiante</h3>
@@ -185,9 +224,13 @@
                             
                             <div class="modal-footer">
                                 <div class="d-grid gap-2 col-6 mx-auto">
+<<<<<<< HEAD
                                     <button class="btn btn-primary" type="submit"  class="d-grid gap-2 d-md-block col-6 mx-auto" data-bs-toggle="modal"
                                             data-bs-target="#agregado">Registrarme</button>
                                     
+=======
+                                    <button class="btn btn-primary" type="submit">Registrarme</button>
+>>>>>>> main
                                 </div>
                             </div>
 
@@ -197,6 +240,7 @@
             </div>
         </div>
     </div>
+<<<<<<< HEAD
     <!-- Modal de Registro -->
     <div class="modal fade" id="registro" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
         aria-labelledby="staticBackdropLabel" aria-hidden="true">
@@ -217,6 +261,8 @@
             </div>
         </div>
     </div>
+=======
+>>>>>>> main
     <!-- Modal de Registro como arrendador -->
 
     <div class="modal fade" id="arrendador" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"

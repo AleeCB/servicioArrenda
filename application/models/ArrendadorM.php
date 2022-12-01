@@ -15,7 +15,11 @@
     }
 
     function InsertArrendador(){
+<<<<<<< HEAD
         $data = array(  
+=======
+        $data = array(
+>>>>>>> main
        'nombre' => $this->input->post('nombre'),
        'apellidoP' => $this->input->post('apellidoP'),
        'apellidoM' =>$this->input->post('apellidoM'),

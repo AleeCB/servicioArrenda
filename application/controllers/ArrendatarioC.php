@@ -1,3 +1,4 @@
+
 <?php
 class ArrendatarioC extends CI_Controller
 {
@@ -29,6 +30,7 @@ public function major(){
                 $this->load->view('headersArrendatario/menu.php');
                 $this->load->view('vistaArrendatario/inicioA.php', $data);
                 $this->load->view('headersArrendatario/footer.php');
+<<<<<<< HEAD
             } 
             else
             {
@@ -37,6 +39,16 @@ public function major(){
 
 } 
    
+=======
+            }
+            else
+            {
+                    $this->load->view('formsuccess');
+            }
+
+} 
+
+>>>>>>> main
 
 
 public function InsertArrendatario(){

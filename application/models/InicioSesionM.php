@@ -23,7 +23,11 @@ class InicioSesionM extends CI_Model
 
 
 
+<<<<<<< HEAD
  
+=======
+
+>>>>>>> main
 
 	function getArrendatarios(){
         $query = $this->db->get('arrendatario');
@@ -36,6 +40,7 @@ class InicioSesionM extends CI_Model
         $query = $this->db->get('arrendatario');
         return $query->result();
     }
+<<<<<<< HEAD
 
 	function getArrendadores(){
         $query = $this->db->get('arrendador');
@@ -48,4 +53,6 @@ class InicioSesionM extends CI_Model
         $query = $this->db->get('arrendador');
         return $query->result();
     }
+=======
+>>>>>>> main
 }?>

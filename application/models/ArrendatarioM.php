@@ -1,4 +1,5 @@
-<?php
+
+ <?php
  class ArrendatarioM extends CI_Model
  {
 

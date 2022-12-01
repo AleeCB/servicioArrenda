@@ -13,6 +13,7 @@ class ArrendadorC extends CI_Controller
          }
 
 
+<<<<<<< HEAD
 //     public function show(){
 //         $this->load->model('ArrendadorM');
 //         $data ['arrendadores'] = $this->ArrendadorM->getArrendadores();
@@ -21,6 +22,16 @@ class ArrendadorC extends CI_Controller
 //                     $this->load->view('vistaPropiedades/vistaArrendatario.php', $data);
 //                     $this->load->view('headers/footer.php');
 //         }
+=======
+    public function show(){
+        $this->load->model('ArrendadorM');
+        $data ['arrendadores'] = $this->ArrendadorM->getArrendadores();
+                    $this->load->view('headers/head.php');
+                    $this->load->view('headers/menu.php');
+                    $this->load->view('vistaPropiedades/vistaArrendatario.php', $data);
+                    $this->load->view('headers/footer.php');
+        }
+>>>>>>> main
 
         public function major(){
         $this->load->model('ArrendadorM');
@@ -109,7 +120,21 @@ class ArrendadorC extends CI_Controller
                }
               //
        }
+<<<<<<< HEAD
   
         }
+=======
+}
+
+// public function getArrendatario($IdArrendatario){
+//     $this->load->view('headersArrendatario/head.php');
+//     $this->load->view('headersArrendatario/menu.php');
+    
+//     $this->load->view('headersArrendatario/footer.php');
+// }
+
+
+
+>>>>>>> main
 
 } ?>
