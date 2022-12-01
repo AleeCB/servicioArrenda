@@ -51,7 +51,7 @@
     <div class="row">
         <div class="col">
             <div> <img
-                    src="https://scontent-qro1-1.xx.fbcdn.net/v/t39.30808-1/269601732_722972438678089_6666087589155891334_n.jpg?stp=dst-jpg_p200x200&_nc_cat=105&ccb=1-7&_nc_sid=7206a8&_nc_eui2=AeFjwa5JFWjDo3XZ1XIzU3LY1-AglYwOe8XX4CCVjA57xTWs3ugeRAx_EoZ4V-qZjV-54g7Zks3lmEP8B_nwTyOW&_nc_ohc=KMllKky8swIAX8ZtXSG&_nc_ht=scontent-qro1-1.xx&oh=00_AfBojgw5mV1ZsIkXcA4zgKZBTPn1GU9VE2vimlI40G6Wew&oe=6377046C"
+                    src="https://cdn-icons-png.flaticon.com/128/2335/2335114.png"
                     alt="" width="350" height="350"><br></br>
 
                 <img src="https://cdn-icons-png.flaticon.com/512/4692/4692905.png" class="rounded" alt="..." width="50"
