@@ -133,7 +133,7 @@
                                     <button class="btn btn-outline-secondary tex-white" style="color: white; " type="submit">ENVIAR</button>
                                 
                             </div>
-        </form>
+        </form> 
     </div>
 </nav>
 

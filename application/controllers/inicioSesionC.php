@@ -15,7 +15,7 @@ class inicioSesionC extends CI_Controller
         {
                 $this->load->view('headers/head');
 				$this->load->view('headers/menu');
-        }
+        }  
         else
         {
                 $this->load->model('InicioSesionM');
